@@ -5,4 +5,11 @@
 	background:    #323232;
 	border-radius: 20px;
 	border:        1px solid #F2F2F0;
+
+
+	@media (max-width: 480px) {
+		height:    60px;
+		width:     300px;
+		font-size: 32px;
+	}
 }
