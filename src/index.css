@@ -8,5 +8,10 @@
 
 body {
 	margin: 0;
+	background: #191919
+}
+* {
 	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+	color: #F2F2F0;
 }

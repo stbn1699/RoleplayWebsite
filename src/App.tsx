@@ -16,6 +16,7 @@ export default function App() {
             <Route path="/page-1" element={<SimplePage title="Page 1" />} />
             <Route path="/page-2" element={<SimplePage title="Page 2" />} />
             <Route path="/page-3" element={<SimplePage title="Page 3" />} />
+            <Route path="/page-4" element={<SimplePage title="Page 4" />} />
         </Routes>
     )
 }
