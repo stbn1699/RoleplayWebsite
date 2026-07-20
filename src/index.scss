@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Josefin Slab';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/JosefinSlab.woff2') format('woff2');
+}
+
+:root {
+	--background-color: #F2F2F0;
+	--text-color: #191919;
+	--button-background: #D2D2D2;
+	--button-border: #191919;
+	--button-text: #191919;
+	--button-border-width: 2px;
+}
+
+[data-theme='dark'] {
+	--background-color: #191919;
+	--text-color: #F2F2F0;
+	--button-background: #323232;
+	--button-border: #F2F2F0;
+	--button-text: #F2F2F0;
+	--button-border-width: 1px;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+	color: var(--text-color);
+}
+
+html,
+body,
+#root {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	background: var(--background-color);
+}

@@ -2,10 +2,9 @@
 	height:        100px;
 	width:         475px;
 	font-size:     64px;
-	background:    #323232;
+	background:    var(--button-background);
 	border-radius: 20px;
-	border:        1px solid #F2F2F0;
-
+	border: var(--button-border-width) solid var(--button-border);
 
 	@media (max-width: 480px) {
 		height:    60px;
