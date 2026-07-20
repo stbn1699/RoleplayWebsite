@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
+import HomePage from "./Components/HomePage/HomePage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function SimplePage({ title }: { title: string }) {
+    return (
+        <main style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
+            <h1>{title}</h1>
+        </main>
+    )
 }
 
-export default App;
+export default function App() {
+    return (
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/page-1" element={<SimplePage title="Page 1" />} />
+            <Route path="/page-2" element={<SimplePage title="Page 2" />} />
+            <Route path="/page-3" element={<SimplePage title="Page 3" />} />
+        </Routes>
+    )
+}
