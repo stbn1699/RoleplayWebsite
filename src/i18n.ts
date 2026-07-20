@@ -15,22 +15,28 @@ i18n
             fr: {
                 translation: {
                     homepage: {
-                        welcome: 'Bienvenue',
+                        title: '~Bienvenue~',
                         characters: 'Personnages',
                         contexts: 'Contextes',
                         rules: 'Règles',
                         infos: 'Informations',
+                    },
+                    characters: {
+                        title: '~Personnages~',
                     }
                 },
             },
             en: {
                 translation: {
                     homepage: {
-                        welcome: 'Welcome',
+                        title: '~Welcome~',
                         characters: 'Characters',
                         contexts: 'Contexts',
                         rules: 'Rules',
                         infos: 'Informations',
+                    },
+                    characters: {
+                        title: '~Characters~',
                     }
                 },
             },

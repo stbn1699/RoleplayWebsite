@@ -9,7 +9,7 @@ export default function HomePage() {
 
     return (
         <div className="HomePage">
-            <h1 className="title">~{t('welcome')}~</h1>
+            <h1 className="title">~{t('title')}~</h1>
 
             <div className="languages">
                 <button
@@ -32,7 +32,7 @@ export default function HomePage() {
             </div>
 
             <div className="buttons">
-                <Button label={t('characters')} onClick={() => navigate('/page-1')} />
+                <Button label={t('characters')} onClick={() => navigate('/characters')} />
                 <Button label={t('contexts')} onClick={() => navigate('/page-2')} />
                 <Button label={t('rules')} onClick={() => navigate('/page-3')} />
                 <Button label={t('infos')} onClick={() => navigate('/page-4')} />

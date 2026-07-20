@@ -1,0 +1,86 @@
+.Characters {
+	margin: auto;
+
+	.title {
+		text-align:    center;
+		font-size:     128px;
+		margin-bottom: 20px;
+	}
+
+	.grid {
+		display:               grid;
+		grid-template-columns: repeat(5, 200px);
+		justify-content:       center;
+		gap:                   24px;
+		margin:                auto;
+	}
+
+	.characterImage {
+		width:         200px;
+		object-fit:    cover;
+		display:       block;
+		border-radius: 15px;
+		border: 2px solid var(--default-border-color);
+	}
+
+	@media (max-width: 1110px) {
+		.grid {
+			grid-template-columns: repeat(4, 200px);
+		}
+	}
+
+	@media (max-width: 880px) {
+		.grid {
+			grid-template-columns: repeat(3, 200px);
+		}
+	}
+
+	@media (max-width: 775px) {
+		.title {
+			font-size: 100px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		.title {
+			font-size:     80px;
+			margin-bottom: 12px;
+		}
+
+		.grid {
+			grid-template-columns: repeat(3, 175px);
+			gap: 16px;
+		}
+
+		.characterImage{
+			width: 175px;
+		}
+	}
+
+	@media (max-width: 580px) {
+		.title {
+			font-size:     70px;
+			margin-bottom: 12px;
+		}
+
+		.grid {
+			grid-template-columns: repeat(3, 150px);
+			gap: 16px;
+		}
+
+		.characterImage{
+			width: 150px;
+		}
+	}
+
+	@media (max-width: 580px) {
+		.grid {
+			grid-template-columns: repeat(3, 125px);
+			gap: 16px;
+		}
+
+		.characterImage{
+			width: 125px;
+		}
+	}
+}
