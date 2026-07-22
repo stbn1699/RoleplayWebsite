@@ -138,9 +138,193 @@ i18n
                             name: 'Soirée Privée',
                             content: 'Lors d’une soirée privée organisée dans le sous-sol du bar, Elina supervise les premières tables de jeu encore en test.\n' +
                                 '\n' +
-                                'L’ambiance est feutrée, réservée à une poignée de clients triés sur le volet. Rapidement, tu attire son attention : tu enchaîne les victoires avec une aisance déconcertante, sans qu’aucune triche ne soit détectée.\n' +
+                                'L’ambiance est feutrée, réservée à une poignée de clients triés sur le volet. Rapidement, tu attire son attention : tu enchaîne les victoires avec une aisance déconcertante, sans qu’aucune triche ne soit détectée.\n' +
                                 '\n' +
-                                ' Plutôt que de faire intervenir qui que ce soit, Elina décide de la faire venir dans un salon privé pour comprendre qui elle est… et comment elle joue.'
+                                'Plutôt que de faire intervenir qui que ce soit, Elina décide de la faire venir dans un salon privé pour comprendre qui elle est… et comment elle joue.'
+                        },
+                        regularClient: {
+                            name: 'Client Régulier',
+                            content: 'Depuis plusieurs semaines, tu revient presque tous les soirs au bar d’Elina. Toujours à la même place, toujours seule, toujours sobre. Tu ne crée aucun problème, paie sans discuter… mais observe beaucoup trop pour être une simple cliente.\n' +
+                                '\n' +
+                                'L’équipe de sécurité t’a déjà remarquée, sans trouver de raison valable de l’intercepter. Tu ne fait rien de répréhensible, mais sa présence devient difficile à ignorer.\n' +
+                                '\n' +
+                                'Ce soir-là, encore une fois, tu est là. Assise, regard posé quelque part entre la scène et le bar… ou peut-être directement sur Elina.'
+                        },
+                        inhabitualClient: {
+                            name: 'Client Inhabituel',
+                            content: 'Eliot reçoit une commande inhabituelle : aucune rencontre, aucune prise de mesures classique, seulement un dossier extrêmement précis envoyé de manière anonyme. Les mensurations sont parfaites, les détails pointus, et le paiement a déjà été effectué… en avance, via un circuit difficile à tracer.\n' +
+                                '\n' +
+                                'Le vêtement demandé est d’un niveau exceptionnel, presque trop spécifique pour quelqu’un qui n’aurait jamais rencontré Eliot.\n' +
+                                '\n' +
+                                'Le jour de la récupération approche… mais Eliot n’a toujours aucune idée de qui se cache derrière cette commande.'
+                        },
+                        ambiguousFittings: {
+                            name: 'Essayages Ambigus',
+                            content: 'Une cliente fortunée réserve un créneau en dehors des horaires habituels pour un essayage entièrement privé.\n' +
+                                '\n' +
+                                'La demande est claire : aucune équipe autour, aucune interruption, juste elle et Eliot dans l’atelier.\n' +
+                                '\n' +
+                                'Ce genre de requête n’est pas inhabituel dans le milieu… mais quelque chose dans son attitude tranche avec ses clientes habituelles. Elle semble moins intéressée par la tenue que par Eliot lui-même, observant chacun de ses gestes, posant des questions plus personnelles que professionnelles.\n' +
+                                '\n' +
+                                'L’essayage se prolonge, bien au-delà de ce qui était prévu.'
+                        },
+                        unexpectedHacking: {
+                            name: 'Hacking Inattendu',
+                            content: 'En travaillant tard dans son atelier, Eliot détecte une intrusion dans son propre système informatique.\n' +
+                                '\n' +
+                                'Quelqu’un a réussi à franchir ses sécurités… sans rien voler, sans rien modifier. Juste entrer, puis rester.\n' +
+                                '\n' +
+                                'En retraçant la source, il remonte jusqu’à une présence active, comme si la personne attendait qu’il la remarque.\n' +
+                                '\n' +
+                                'Quelques minutes plus tard, une femme apparaît devant la boutique, comme si tout était parfaitement synchronisé.'
+                        },
+                        carNotBroken: {
+                            name: 'Voiture Non Cassée',
+                            content: 'Robin voit passer beaucoup de monde pour des réparations, mais une femme commence à revenir souvent… pour des problèmes mineurs, voire inexistants. \n' +
+                                '\n' +
+                                'Elle traîne, pose des questions, observe Robin travailler avec un intérêt qui dépasse largement la mécanique.\n' +
+                                '\n' +
+                                'Robin comprend vite que la voiture n’est qu’un prétexte, mais reste à savoir pourquoi : fascination, attirance… ou autre chose de moins innocent.'
+                        },
+                        technicalTalk: {
+                            name: 'Conversation Technique',
+                            content: 'Robin est présente sur les événements de courses de rue, mais toujours en retrait, concentrée sur ses voitures et les performances des pilotes qui les conduisent.\n' +
+                                '\n' +
+                                'Une femme s’intéresse particulièrement à son travail, restant près des stands, posant des questions précises… parfois trop.\n' +
+                                '\n' +
+                                'Entre discussions techniques, regards qui s’attardent et tension qui monte doucement, Robin se demande si cette femme est juste passionnée… ou si elle cherche aussi à se rapprocher d’elle.'
+                        },
+                        dangerousWomen: {
+                            name: "Femme Dangereuse",
+                            content: 'Une femme liée à un réseau plus dangereux que les simples courses de rue commence à fréquenter le hangar. Elle propose des contrats, des voitures, de l’argent… mais tout ça a un prix.\n' +
+                                '\n' +
+                                'Robin sent que ça peut la faire monter très vite… mais aussi la faire tomber. Au milieu de ça, une relation se développe, entre méfiance, désir et risques constants.'
+                        },
+                        newCollection: {
+                            name: 'nouvelle collection',
+                            content: 'Eliot organise un shooting pour tester une nouvelle collection, et Finn pose comme modèle principal, dans un lieu qui colle à leur esthétique (rue élégante, toit, vieux théâtre, studio minimaliste). Tu es présent·e sur le shooting en tant que photographe, maquilleuse, styliste, assistant·e ou autre rôle lié à la création.\n' +
+                                '\n' +
+                                'Au fil des prises, Finn garde son attitude détendue, parle musique, plaisante, tandis qu’Eliot reste concentrée sur les vêtements et les détails. La journée de travail laisse la place à des échanges plus personnels, entre inspiration visuelle et affinités musicales.'
+                        },
+                        musicAndFood: {
+                            name: 'musique et nourriture',
+                            content: 'Après une journée de travail, Finn se rend a un repas-concert intimiste d’un artiste qu’il aime, dans une petite salle / restaurant plutôt raffiné. Tu y étais, et la soirée se déroule dans une atmosphère douce, centrée sur les instruments, les voix et l’émotion de la musique en live.\n' +
+                                '\n' +
+                                'Après cette soirée, vous vous retrouvez a ma même table, vous parlez de vos groupes préférés, de souvenirs de concerts, de playlists que vous vous partagez. Le moment marque une bascule entre simple connaissance et véritable complicité, portée par la musique plutôt que par le travail.'
+                        },
+                        fashionShow: {
+                            name: 'Défilé de Mode',
+                            content: 'Vous êtes tous les deux sur le même défilé, affectés à une série de silhouettes proches dans l’ordre de passage. En backstage, vous partagez le même portant, les mêmes retouches de dernière minute, les mêmes instructions qu’on répète en boucle. \n' +
+                                '\n' +
+                                'Entre stress léger, maquillage et essayages, vous commencez à échanger quelques mots, des regards, ensemble sur un passage en duo. Cette proximité répétée, entre coulisses et lumière, crée un lien naturel : vous vous retrouvez à la fin du show, encore en demi-costume, à parler de la soirée et de la sensation étrange mais agréable d’avoir partagé la scène.'
+                        },
+                        strangeNewWork: {
+                            name: 'Étrange Nouveau Travail',
+                            content: 'On se connaît à peine, mais je cerche du travail. Je propose de t’aider dans ton quotidien (ménage, organisation, tâches diverses).\n' +
+                                '\n' +
+                                'En échange, tu installes un cadre strict : règles, posture, manière de parler.\n' +
+                                '\n' +
+                                'Ce qui commence comme un arrangement pratique devient une dynamique de contrôle assumée, où je prends plaisir à être guidée, corrigée, et utilisée dans un cadre consenti.\n' +
+                                '\n' +
+                                'Le lien évolue entre discipline, dépendance et attachement.'
+                        },
+                        kinkyMeeting: {
+                            name: 'Rencontre Kinky',
+                            content: 'On se rencontre via un milieu kink, et j’exprime clairement mon envie d’être soumise, encadrée et “dressée”.\n' +
+                                '\n' +
+                                'Tu prends ce rôle au sérieux : mise en place de routines, apprentissage du pet play, utilisation de tenues (latex, bitchsuit), exercices de comportement.\n' +
+                                '\n' +
+                                'La relation tourne autour du dressage, du contrôle et de la progression, avec une montée en intensité dans la confiance et l’abandon.'
+                        },
+                        collocation: {
+                            name: 'Collocation',
+                            content: 'On est colocataires, et au début j’aide juste un peu plus que prévu dans l’appartement. Petit à petit, je prends l’habitude de m’occuper de tout : ménage, lessive, courses… et surtout de toi.\n' +
+                                '\n' +
+                                'Avec le temps, la dynamique change. Je cherche ton approbation, attends tes ordres, et finis par adopter une place plus basse, presque comme un animal de compagnie.\n' +
+                                '\n' +
+                                'On met en place des règles, des limites… et un jeu de domination où je deviens progressivement la chienne de la maison.'
+                        },
+                        returnedProtection: {
+                            name: 'Protection Retournée',
+                            context: 'Je suis engagée pour te protéger, mais au fil du temps, mon rôle dépasse largement la sécurité. Je suis toujours là, toujours disponible, toujours attentive à tes besoins.\n' +
+                                '\n' +
+                                'La relation glisse vers quelque chose de plus possessif et asymétrique, où je deviens une protectrice dévouée… mais aussi une soumise qui vit pour servir.\n' +
+                                '\n' +
+                                'On construit une dynamique où utilité, loyauté et désir s’entremêlent.'
+                        },
+                        relationshipEvolution: {
+                            name: 'Évolution de Relation',
+                            content: 'On est en couple, et après discussion, je décide de m’abandonner à une dynamique de domination totale dans le cadre privé.\n' +
+                                '\n' +
+                                'Des règles sont mises en place : tenue, comportement, accès à mon corps, moments dédiés où je n’ai plus à décider mais simplement à suivre.\n' +
+                                '\n' +
+                                'Le quotidien devient un terrain de jeu structuré, entre contrôle, rituels et abandon consenti.'
+                        },
+                        privateCircle: {
+                            name: 'Cercle Privé',
+                            content: 'Je suis entrée dans un cercle magique privé, où certaines sorcières pratiquent des formes de magie avancées basées sur le contrôle et la discipline du corps. J’y deviens ton apprentie, acceptant de me soumettre à tes rituels.\n' +
+                                '\n' +
+                                'Entre enchantements de contrainte, accessoires enchantés (liens magiques, tenues vivantes comme du latex enchanté), et règles strictes, mon corps et mes réactions deviennent partie intégrante de l’apprentissage.\n' +
+                                '\n' +
+                                'La relation évolue entre enseignement, domination et abandon, dans un cadre de plus en plus exigeant.'
+                        },
+                        enchantedClothes: {
+                            name: 'Vêtements Enchantés',
+                            content: 'Je pousse la porte d’une boutique discrète du Chemin de Traverse, spécialisée dans des vêtements enchantés très particuliers. La propriétaire crée des pièces uniques qui réagissent au corps, à la magie… et à l’autorité de celle qui les contrôle.\n' +
+                                '\n' +
+                                'En essayant certaines créations (bitchsuit enchantée, latex vivant, colliers magiques), je découvre que ces objets ne sont pas seulement esthétiques, mais faits pour imposer des postures, des comportements, et amplifier une dynamique de soumission.\n' +
+                                '\n' +
+                                'Très vite, je reviens… moins pour les vêtements, et plus pour celle qui les contrôle.'
+                        },
+                        magicPact: {
+                            name: 'Pacte Magique',
+                            content: 'Je conclus un pacte magique volontaire avec une sorcière puissante, un serment ancien qui lie ma magie et mon corps à elle dans certaines conditions.\n' +
+                                '\n' +
+                                'Ce lien crée une connexion constante : sensations amplifiées, besoin de proximité, incapacité à ignorer ses ordres dans le cadre défini du rituel.\n' +
+                                '\n' +
+                                'Entre dépendance magique, rituels réguliers et exploration de limites toujours repoussées, la relation devient aussi intense que dangereusement addictive — tout en restant basée sur des règles claires établies dès le départ.'
+                        },
+                        strangeCopilot: {
+                            name: 'Étrange Copilote',
+                            content: 'J’ai été réduite à l’état de “propriété” dans des circuits illégaux, jusqu’à ce que tu me rachètes lors d’une transaction. Contrairement aux autres, tu ne m’utilises pas comme un objet : tu me proposes un contrat clair.\n' +
+                                '\n' +
+                                'Je reste à tes côtés, je t’appartiens dans un cadre défini… mais en échange, j’ai une place, une fonction. Rapidement, tu découvres mes connaissances sur les routes, les espèces et les vaisseaux.\n' +
+                                '\n' +
+                                'Je deviens indispensable à tes missions… et volontairement soumise à toi, autant dans le cockpit que dans l’intimité.'
+                        },
+                        ClandestineSexShop: {
+                            name: 'Sex-Shop Clandestin',
+                            content: 'Je travaille dans un sexshop clandestin des bas-fonds de Coruscant, un endroit réservé à une clientèle riche et discrète. \n' +
+                                '\n' +
+                                'Officiellement vendeuse, je suis surtout “mise à disposition” pour tester, présenter et porter certains produits très spécifiques.\n' +
+                                '\n' +
+                                'Quand tu entres dans la boutique, tu comprends vite que je ne suis pas une simple employée. Entre objets technologiques, accessoires sci-fi et regards insistants, une dynamique s’installe.\n' +
+                                '\n' +
+                                'Je pourrais rester un simple produit du lieu… ou devenir quelque chose de bien plus personnel pour toi.'
+                        },
+                        sandServant: {
+                            name: "Servante de Sable",
+                            content: 'Je vis comme servante dans une demeure isolée sur Tatooine, habituée à obéir, à anticiper, à me faire discrète. Mon quotidien est rythmé par les ordres, la chaleur écrasante et l’absence de liberté.\n' +
+                                '\n' +
+                                'Ton arrivée change l’équilibre. Tu n’as pas la même manière de me regarder, ni les mêmes attentes.\n' +
+                                '\n' +
+                                'Entre habitudes ancrées et nouvelles possibilités, une relation se construit, entre contrôle, curiosité et évolution du lien.'
+                        },
+                        shipRepair: {
+                            name: 'Réparation de Vaisseaux',
+                            content: 'On se rencontre dans un hangar sur une planète périphérique, toutes les deux occupées à réparer des vaisseaux dans des conditions précaires.\n' +
+                                '\n' +
+                                'Très vite, une complicité naît entre nous : échanges de techniques, entraide, longues nuits à bricoler côte à côte.\n' +
+                                '\n' +
+                                'Ce qui commence comme une collaboration devient une relation plus personnelle, faite de tension, de proximité et d’un attachement qui se construit sans rapport de domination.'
+                        },
+                        bountyHunters: {
+                            name: 'Chasseuses de Primes',
+                            content: 'On est toutes les deux chasseuses de primes, souvent en compétition sur les mêmes contrats. Chaque rencontre est un mélange de rivalité et d’attirance.\n' +
+                                '\n' +
+                                'On se croise, on se gêne, parfois on s’allie temporairement… sans jamais vraiment se faire confiance.\n' +
+                                '\n' +
+                                'Entre affrontements, négociations tendues et moments de répit inattendus, la relation oscille entre ennemies et quelque chose de beaucoup plus ambigu.'
                         }
                     }
                 },
@@ -262,5 +446,3 @@ i18n
             },
         },
     })
-
-export default i18n

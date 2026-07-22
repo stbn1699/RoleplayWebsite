@@ -3,14 +3,200 @@
 		"id": 1,
 		"name": "intrusion",
 		"universe": "IRL",
+		"nsfw": false,
 		"character": "elina",
-		"chatacterId": 1
+		"characterId": 1
 	},
 	{
 		"id": 2,
 		"name": "privateParty",
 		"universe": "IRL",
+		"nsfw": false,
 		"character": "elina",
-		"chatacterId": 1
+		"characterId": 1
+	},
+	{
+		"id": 3,
+		"name": "regularClient",
+		"universe": "IRL",
+		"nsfw": false,
+		"character": "elina",
+		"characterId": 1
+	},
+	{
+		"id": 4,
+		"name": "inhabitualClient",
+		"universe": "IRL",
+		"nsfw": false,
+		"character": "eliot",
+		"characterId": 2
+	},
+	{
+		"id": 5,
+		"name": "ambiguousFittings",
+		"universe": "IRL",
+		"nsfw": false,
+		"character": "eliot",
+		"characterId": 2
+	},
+	{
+		"id": 6,
+		"name": "unexpectedHacking",
+		"universe": "IRL",
+		"nsfw": false,
+		"character": "eliot",
+		"characterId": 2
+	},
+	{
+		"id": 7,
+		"name": "CarNotBroken",
+		"universe": "IRL",
+		"nsfw": false,
+		"character": "robin",
+		"characterId": 3
+	},
+	{
+		"id": 8,
+		"name": "technicalTalk",
+		"universe": "IRL",
+		"nsfw": false,
+		"character": "robin",
+		"characterId": 3
+	},
+	{
+		"id": 9,
+		"name": "dangerousWomen",
+		"universe": "IRL",
+		"nsfw": false,
+		"character": "robin",
+		"characterId": 3
+	},
+	{
+		"id": 10,
+		"name": "newCollection",
+		"universe": "IRL",
+		"nsfw": false,
+		"character": "finn",
+		"characterId": 4
+	},
+	{
+		"id": 11,
+		"name": "musicAndFood",
+		"universe": "IRL",
+		"nsfw": false,
+		"character": "finn",
+		"characterId": 4
+	},
+	{
+		"id": 12,
+		"name": "fashionShow",
+		"universe": "IRL",
+		"nsfw": false,
+		"character": "finn",
+		"characterId": 4
+	},
+	{
+		"id": 13,
+		"name": "strangeNewWork",
+		"universe": "SM",
+		"nsfw": true,
+		"character": "aucun",
+		"characterId": 0
+	},
+	{
+		"id": 14,
+		"name": "kinkyMeeting",
+		"universe": "SM",
+		"nsfw": true,
+		"character": "aucun",
+		"characterId": 0
+	},
+	{
+		"id": 15,
+		"name": "collocation",
+		"universe": "SM",
+		"nsfw": true,
+		"character": "aucun",
+		"characterId": 0
+	},
+	{
+		"id": 16,
+		"name": "returnedProtection",
+		"universe": "SM",
+		"nsfw": true,
+		"character": "aucun",
+		"characterId": 0
+	},
+	{
+		"id": 17,
+		"name": "relationshipEvolution",
+		"universe": "SM",
+		"nsfw": true,
+		"character": "aucun",
+		"characterId": 0
+	},
+	{
+		"id": 18,
+		"name": "privateCircle",
+		"universe": ["Magic", "SM"],
+		"nsfw": true,
+		"character": "lyra",
+		"characterId": 0
+	},
+	{
+		"id": 19,
+		"name": "enchantedClothes",
+		"universe": ["Magic", "SM"],
+		"nsfw": true,
+		"character": "lyra",
+		"characterId": 0
+	},
+	{
+		"id": 20,
+		"name": "magicPact",
+		"universe": ["Magic", "SM"],
+		"nsfw": true,
+		"character": "lyra",
+		"characterId": 0
+	},
+	{
+		"id": 21,
+		"name": "strangeCopilot",
+		"universe": ["Star Wars", "SM"],
+		"nsfw": true,
+		"character": "aucun",
+		"characterId": 0
+	},
+	{
+		"id": 22,
+		"name": "ClandestineSexShop",
+		"universe": ["Star Wars", "SM"],
+		"nsfw": true,
+		"character": "aucun",
+		"characterId": 0
+	},
+	{
+		"id": 23,
+		"name": "sandServant",
+		"universe": ["Star Wars", "SM"],
+		"nsfw": true,
+		"character": "aucun",
+		"characterId": 0
+	},
+	{
+		"id": 24,
+		"name": "shipRepair",
+		"universe": ["Star Wars"],
+		"nsfw": false,
+		"character": "aucun",
+		"characterId": 0
+	},
+	{
+		"id": 25,
+		"name": "bountyHunters",
+		"universe": ["Star Wars"],
+		"nsfw": false,
+		"character": "aucun",
+		"characterId": 0
 	}
 ]
