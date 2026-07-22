@@ -1,0 +1,73 @@
+.CharacterDetail {
+	margin: auto;
+
+	.backgroundIcon {
+		position:              fixed;
+		top:                   50%;
+		left:                  50%;
+		transform:             translate(-50%, -50%);
+		width:                 420px;
+		height:                420px;
+		z-index:               -1;
+		background-color:      var(--icon-color);
+		mask-image:            var(--icon-url);
+		mask-repeat:           no-repeat;
+		mask-position:         center;
+		mask-size:             contain;
+		-webkit-mask-image:    var(--icon-url);
+		-webkit-mask-repeat:   no-repeat;
+		-webkit-mask-position: center;
+		-webkit-mask-size:     contain;
+	}
+
+	.title {
+		text-align:     center;
+		font-size:      128px;
+		margin-bottom:  20px;
+		text-transform: capitalize;
+		margin-top:     40px;
+
+		&::before {
+			content: "~"
+		}
+
+		&::after {
+			content: "~"
+		}
+	}
+
+	.description {
+		max-width:   1200px;
+		margin:      0 auto 500px;
+		padding:     0 15px;
+		text-align:  center;
+		font-size:   45px;
+		line-height: 75px;
+		font-weight: 400;
+		white-space: pre-line;
+	}
+
+	@media (max-width: 775px) {
+		.title {
+			font-size: 100px;
+		}
+		.description {
+			font-size:   30px;
+			line-height: 50px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		.title {
+			font-size:     80px;
+			margin-bottom: 12px;
+		}
+	}
+
+	@media (max-width: 580px) {
+		.title {
+			font-size:     70px;
+			margin-bottom: 12px;
+		}
+	}
+}

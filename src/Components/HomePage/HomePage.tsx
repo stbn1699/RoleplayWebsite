@@ -9,7 +9,7 @@ export default function HomePage() {
 
     return (
         <div className="HomePage">
-            <h1 className="title">~{t('title')}~</h1>
+            <h1 className="title">{t('title')}</h1>
 
             <div className="languages">
                 <button
