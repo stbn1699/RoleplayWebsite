@@ -2,201 +2,176 @@
 	{
 		"id": 1,
 		"name": "intrusion",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "elina",
-		"characterId": 1
+		"character": ["elina"]
 	},
 	{
 		"id": 2,
 		"name": "privateParty",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "elina",
-		"characterId": 1
+		"character": ["elina"]
 	},
 	{
 		"id": 3,
 		"name": "regularClient",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "elina",
-		"characterId": 1
+		"character": ["elina"]
 	},
 	{
 		"id": 4,
 		"name": "inhabitualClient",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "eliot",
-		"characterId": 2
+		"character": ["eliot"]
 	},
 	{
 		"id": 5,
 		"name": "ambiguousFittings",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "eliot",
-		"characterId": 2
+		"character": ["eliot"]
 	},
 	{
 		"id": 6,
 		"name": "unexpectedHacking",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "eliot",
-		"characterId": 2
+		"character": ["eliot"]
 	},
 	{
 		"id": 7,
 		"name": "carNotBroken",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "robin",
-		"characterId": 3
+		"character": ["robin"]
 	},
 	{
 		"id": 8,
 		"name": "technicalTalk",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "robin",
-		"characterId": 3
+		"character": ["robin"]
 	},
 	{
 		"id": 9,
 		"name": "dangerousWomen",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "robin",
-		"characterId": 3
+		"character": ["robin"]
 	},
 	{
 		"id": 10,
 		"name": "newCollection",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "finn",
-		"characterId": 4
+		"character": ["finn"]
 	},
 	{
 		"id": 11,
 		"name": "musicAndFood",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "finn",
-		"characterId": 4
+		"character": ["finn"]
 	},
 	{
 		"id": 12,
 		"name": "fashionShow",
-		"universe": "IRL",
+		"universe": ["IRL"],
 		"nsfw": false,
-		"character": "finn",
-		"characterId": 4
+		"character": ["finn"]
 	},
 	{
 		"id": 13,
 		"name": "strangeNewWork",
-		"universe": "SM",
+		"universe": ["SM"],
 		"nsfw": true,
-		"character": "aucun",
-		"characterId": 0
+		"character": ["aucun"]
 	},
 	{
 		"id": 14,
 		"name": "kinkyMeeting",
-		"universe": "SM",
+		"universe": ["SM"],
 		"nsfw": true,
-		"character": "aucun",
-		"characterId": 0
+		"character": ["aucun"]
 	},
 	{
 		"id": 15,
 		"name": "collocation",
-		"universe": "SM",
+		"universe": ["SM"],
 		"nsfw": true,
-		"character": "aucun",
-		"characterId": 0
+		"character": ["aucun"]
 	},
 	{
 		"id": 16,
 		"name": "returnedProtection",
-		"universe": "SM",
+		"universe": ["SM"],
 		"nsfw": true,
-		"character": "aucun",
-		"characterId": 0
+		"character": ["aucun"]
 	},
 	{
 		"id": 17,
 		"name": "relationshipEvolution",
-		"universe": "SM",
+		"universe": ["SM"],
 		"nsfw": true,
-		"character": "aucun",
-		"characterId": 0
+		"character": ["aucun"]
 	},
 	{
 		"id": 18,
 		"name": "privateCircle",
 		"universe": ["Magic", "SM"],
 		"nsfw": true,
-		"character": "lyra",
-		"characterId": 0
+		"character": ["lyra"]
 	},
 	{
 		"id": 19,
 		"name": "enchantedClothes",
 		"universe": ["Magic", "SM"],
 		"nsfw": true,
-		"character": "lyra",
-		"characterId": 0
+		"character": ["lyra"]
 	},
 	{
 		"id": 20,
 		"name": "magicPact",
 		"universe": ["Magic", "SM"],
 		"nsfw": true,
-		"character": "lyra",
-		"characterId": 0
+		"character": ["lyra"]
 	},
 	{
 		"id": 21,
 		"name": "strangeCopilot",
 		"universe": ["Star Wars", "SM"],
 		"nsfw": true,
-		"character": "aucun",
-		"characterId": 0
+		"character": ["aucun"]
 	},
 	{
 		"id": 22,
 		"name": "ClandestineSexShop",
 		"universe": ["Star Wars", "SM"],
 		"nsfw": true,
-		"character": "aucun",
-		"characterId": 0
+		"character": ["aucun"]
 	},
 	{
 		"id": 23,
 		"name": "sandServant",
 		"universe": ["Star Wars", "SM"],
 		"nsfw": true,
-		"character": "aucun",
-		"characterId": 0
+		"character": ["aucun"]
 	},
 	{
 		"id": 24,
 		"name": "shipRepair",
 		"universe": ["Star Wars"],
 		"nsfw": false,
-		"character": "aucun",
-		"characterId": 0
+		"character": ["aucun"]
 	},
 	{
 		"id": 25,
 		"name": "bountyHunters",
 		"universe": ["Star Wars"],
 		"nsfw": false,
-		"character": "aucun",
-		"characterId": 0
+		"character": ["aucun"]
 	}
 ]
