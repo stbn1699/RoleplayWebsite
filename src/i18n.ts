@@ -135,7 +135,7 @@ i18n
                                 'En avançant, elle te découvre... installée chez elle, parfaitement calme, comme si elle était à sa place.'
                         },
                         privateParty: {
-                            name: 'Private Party',
+                            name: 'Soirée Privée',
                             content: 'Lors d’une soirée privée organisée dans le sous-sol du bar, Elina supervise les premières tables de jeu encore en test.\n' +
                                 '\n' +
                                 'L’ambiance est feutrée, réservée à une poignée de clients triés sur le volet. Rapidement, tu attire son attention : tu enchaîne les victoires avec une aisance déconcertante, sans qu’aucune triche ne soit détectée.\n' +

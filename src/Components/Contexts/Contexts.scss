@@ -2,17 +2,17 @@
 	width:  min(1400px, calc(100% - 80px));
 	margin: 40px auto 80px;
 
-	.pageTitle {
-		font-size:     128px;
-		text-align:    center;
-		margin-bottom: 32px;
+	.title {
+		text-align: center;
+		font-size:  128px;
+		margin:     0;
 
 		&::before {
-			content: "~ ";
+			content: "~";
 		}
 
 		&::after {
-			content: " ~";
+			content: "~";
 		}
 	}
 
@@ -49,10 +49,10 @@
 	}
 
 	.contextHeading {
-		display: grid;
+		display:               grid;
 		grid-template-columns: minmax(0, 1fr) auto;
-		align-items: center;
-		gap: 20px;
+		align-items:           center;
+		gap:                   20px;
 	}
 
 	.contextTitle {
@@ -65,21 +65,21 @@
 	}
 
 	.contextMeta {
-		display: grid;
+		display:               grid;
 		grid-template-columns: auto auto;
-		column-gap: 14px;
-		row-gap: 2px;
-		justify-self: end;
-		justify-items: start;
-		width: fit-content;
-		text-align: left;
+		column-gap:            14px;
+		row-gap:               2px;
+		justify-self:          end;
+		justify-items:         start;
+		width:                 fit-content;
+		text-align:            left;
 
 		p {
-			display: contents;
-			margin: 0;
-			font-size: clamp(24px, 3vw, 42px);
+			display:     contents;
+			margin:      0;
+			font-size:   clamp(24px, 3vw, 42px);
 			line-height: 1.05;
-			color: var(--default-text-color);
+			color:       var(--default-text-color);
 		}
 
 		.label {
@@ -89,8 +89,32 @@
 
 		.value {
 			white-space: nowrap;
-			text-align: left;
+			text-align:  left;
 			font-weight: 400;
+		}
+	}
+
+	.characterLink {
+		border:                none;
+		background:            transparent;
+		padding:               0;
+		margin:                0;
+		font:                  inherit;
+		color:                 #1d4ed8;
+		text-decoration:       underline;
+		text-underline-offset: 0.08em;
+		cursor:                pointer;
+		font-weight: 400;
+
+
+		&:hover {
+			color: #1e40af;
+		}
+
+		&:focus-visible {
+			outline:        2px solid #1d4ed8;
+			outline-offset: 3px;
+			border-radius:  4px;
 		}
 	}
 

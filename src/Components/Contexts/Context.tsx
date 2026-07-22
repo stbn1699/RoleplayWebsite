@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+import {useEffect, useState} from "react";
+import {useTranslation} from "react-i18next";
+import {useNavigate} from "react-router-dom";
 import './Contexts.scss'
 
 type Context = {
@@ -17,7 +18,8 @@ function formatCharacterName(name: string) {
 export default function Contexts() {
     const [contexts, setContexts] = useState<Context[]>([])
     const [openContextId, setOpenContextId] = useState<number | null>(null)
-    const { t } = useTranslation('translation', { keyPrefix: 'contexts' })
+    const {t} = useTranslation('translation', {keyPrefix: 'contexts'})
+    const navigate = useNavigate()
 
     useEffect(() => {
         fetch('/Data/Contexts.json')
@@ -30,9 +32,17 @@ export default function Contexts() {
         setOpenContextId((prev) => (prev === id ? null : id))
     }
 
+    const handleCharacterClick = (
+        event: React.MouseEvent<HTMLButtonElement>,
+        characterName: string
+    ) => {
+        event.stopPropagation()
+        navigate(`/characterdetail?characterName=${encodeURIComponent(characterName)}`)
+    }
+
     return (
         <div className="Contexts">
-            <h1 className="pageTitle">Contexts</h1>
+            <h1 className="title">Contexts</h1>
 
             <div className="contextsList">
                 {contexts.map((context) => {
@@ -59,9 +69,15 @@ export default function Contexts() {
                                     <div className="contextMeta">
                                         <p>
                                             <span className="label">Personnage :</span>{' '}
-                                            <span className="value">
+                                            <button
+                                                type="button"
+                                                className="characterLink"
+                                                onClick={(event) =>
+                                                    handleCharacterClick(event, context.character)
+                                                }
+                                            >
                                                 {formatCharacterName(context.character)}
-                                            </span>
+                                            </button>
                                         </p>
 
                                         <p>
