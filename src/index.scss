@@ -1,37 +1,39 @@
 @font-face {
 	font-family: 'Josefin Slab';
-	font-style: normal;
+	font-style:  normal;
 	font-weight: 500;
-	src: url('/JosefinSlab.woff2') format('woff2');
+	src:         url('/JosefinSlab.woff2') format('woff2');
 }
 
 :root {
-	--background-color: #F2F2F0;
-	--text-color: #191919;
+	--background-color:     #F2F2F0;
+	--text-color:           #191919;
 	--default-border-color: #191919;
-	--icon-color: #D2D2D2;
-	--button-background: #D2D2D2;
-	--button-border: #191919;
-	--button-text: #191919;
-	--button-border-width: 2px;
+	--icon-color:           #D2D2D2;
+	--navlink-blue:         #1d4ed8;
+	--button-background:    #D2D2D2;
+	--button-border:        #191919;
+	--button-text:          #191919;
+	--button-border-width:  2px;
 }
 
 [data-theme='dark'] {
-	--background-color: #191919;
-	--text-color: #F2F2F0;
+	--background-color:     #191919;
+	--text-color:           #F2F2F0;
 	--default-border-color: #F2F2F0;
-	--icon-color: #323232;
-	--button-background: #323232;
-	--button-border: #F2F2F0;
-	--button-text: #F2F2F0;
-	--button-border-width: 1px;
+	--icon-color:           #323232;
+	--navlink-blue:         #a3baff;
+	--button-background:    #323232;
+	--button-border:        #F2F2F0;
+	--button-text:          #F2F2F0;
+	--button-border-width:  1px;
 }
 
 * {
-	box-sizing: border-box;
+	box-sizing:  border-box;
 	font-family: 'Josefin Slab', serif;
 	font-weight: 700;
-	color: var(--text-color);
+	color:       var(--text-color);
 }
 
 html,
@@ -41,6 +43,6 @@ body,
 }
 
 body {
-	margin: 0;
+	margin:     0;
 	background: var(--background-color);
 }
