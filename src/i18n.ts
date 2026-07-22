@@ -179,7 +179,7 @@ i18n
                                 'Quelques minutes plus tard, une femme apparaît devant la boutique, comme si tout était parfaitement synchronisé.'
                         },
                         carNotBroken: {
-                            name: 'Voiture Non Cassée',
+                            name: 'Voiture non Cassée',
                             content: 'Robin voit passer beaucoup de monde pour des réparations, mais une femme commence à revenir souvent… pour des problèmes mineurs, voire inexistants. \n' +
                                 '\n' +
                                 'Elle traîne, pose des questions, observe Robin travailler avec un intérêt qui dépasse largement la mécanique.\n' +
@@ -201,13 +201,13 @@ i18n
                                 'Robin sent que ça peut la faire monter très vite… mais aussi la faire tomber. Au milieu de ça, une relation se développe, entre méfiance, désir et risques constants.'
                         },
                         newCollection: {
-                            name: 'nouvelle collection',
+                            name: 'Nouvelle Collection',
                             content: 'Eliot organise un shooting pour tester une nouvelle collection, et Finn pose comme modèle principal, dans un lieu qui colle à leur esthétique (rue élégante, toit, vieux théâtre, studio minimaliste). Tu es présent·e sur le shooting en tant que photographe, maquilleuse, styliste, assistant·e ou autre rôle lié à la création.\n' +
                                 '\n' +
                                 'Au fil des prises, Finn garde son attitude détendue, parle musique, plaisante, tandis qu’Eliot reste concentrée sur les vêtements et les détails. La journée de travail laisse la place à des échanges plus personnels, entre inspiration visuelle et affinités musicales.'
                         },
                         musicAndFood: {
-                            name: 'musique et nourriture',
+                            name: 'Musique et Nourriture',
                             content: 'Après une journée de travail, Finn se rend a un repas-concert intimiste d’un artiste qu’il aime, dans une petite salle / restaurant plutôt raffiné. Tu y étais, et la soirée se déroule dans une atmosphère douce, centrée sur les instruments, les voix et l’émotion de la musique en live.\n' +
                                 '\n' +
                                 'Après cette soirée, vous vous retrouvez a ma même table, vous parlez de vos groupes préférés, de souvenirs de concerts, de playlists que vous vous partagez. Le moment marque une bascule entre simple connaissance et véritable complicité, portée par la musique plutôt que par le travail.'
