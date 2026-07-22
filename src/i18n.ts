@@ -441,6 +441,208 @@ i18n
                                 '\n' +
                                 'Her world revolves around body positivity, make-up that enhances her features without smoothing them out, and honest conversations with her community about confidence, relationships, and sexuality that is embraced without being performed. Rae lives from carefully selected partnerships (lingerie, make-up, jewellery, décor), exclusive content, and photo collaborations with other artists, but what sets her apart is the way she stays approachable: it feels as though you are sitting in her room with her, rather than looking at a perfect storefront.',
                         },
+                    },
+                    contexts: {
+                        intrusion: {
+                            name: 'Intrusion',
+                            content: 'Around 2am, once the bar has gradually closed for the night, Elina heads up to her penthouse on the top floor. As soon as she walks in, she notices something unusual: a light is on in the living room, even though she is certain she turned it off before leaving.\n' +
+                                '\n' +
+                                'Security reported no intrusion. The cameras picked up nothing out of the ordinary.\n' +
+                                '\n' +
+                                'As she moves further in, she finds you... settled in her home, perfectly calm, as if you belonged there.'
+                        },
+                        privateParty: {
+                            name: 'Private Party',
+                            content: 'During a private party held in the bar’s basement, Elina oversees the first gaming tables, still in their testing phase.\n' +
+                                '\n' +
+                                'The atmosphere is hushed, reserved for a handful of carefully selected guests. You quickly catch her attention: you rack up win after win with unsettling ease, without any cheating ever being detected.\n' +
+                                '\n' +
+                                'Rather than having anyone intervene, Elina decides to have you brought to a private lounge to understand who you are… and how you play.'
+                        },
+                        regularClient: {
+                            name: 'Regular Client',
+                            content: 'For several weeks now, you have come back to Elina’s bar almost every night. Always in the same seat, always alone, always sober. You never cause trouble, you pay without a word… but you watch far too closely to be just another customer.\n' +
+                                '\n' +
+                                'The security team has already noticed you, without ever finding a real reason to step in. You do nothing wrong, yet your presence becomes hard to ignore.\n' +
+                                '\n' +
+                                'That night, once again, you are there. Seated, your gaze resting somewhere between the stage and the bar… or perhaps directly on Elina.'
+                        },
+                        inhabitualClient: {
+                            name: 'Inhabitual Client',
+                            content: 'Eliot receives an unusual order: no meeting, no standard measurements taken, just an extremely precise file sent anonymously. The measurements are flawless, the details razor-sharp, and payment has already been made… in advance, through a hard-to-trace channel.\n' +
+                                '\n' +
+                                'The garment requested is exceptional, almost too specific for someone who has never actually met Eliot.\n' +
+                                '\n' +
+                                'The day of pickup draws near… yet Eliot still has no idea who is behind this order.'
+                        },
+                        ambiguousFittings: {
+                            name: 'Ambiguous Fittings',
+                            content: 'A wealthy client books a slot outside regular hours for a completely private fitting.\n' +
+                                '\n' +
+                                'The request is clear: no staff around, no interruptions, just her and Eliot in the workshop.\n' +
+                                '\n' +
+                                'This kind of request is not unusual in the trade… but something about her attitude sets her apart from Eliot’s usual clients. She seems less interested in the outfit than in Eliot themself, watching every one of their movements, asking questions that feel more personal than professional.\n' +
+                                '\n' +
+                                'The fitting drags on, well beyond what was planned.'
+                        },
+                        unexpectedHacking: {
+                            name: 'Unexpected Hacking',
+                            content: 'Working late in the workshop, Eliot detects an intrusion into their own computer system.\n' +
+                                '\n' +
+                                'Someone has managed to breach their defenses… without stealing anything, without changing anything. Just getting in, then staying.\n' +
+                                '\n' +
+                                'Tracing the source, they find an active presence, as if the person were waiting to be noticed.\n' +
+                                '\n' +
+                                'A few minutes later, a woman appears in front of the shop, as though everything had been perfectly timed.'
+                        },
+                        carNotBroken: {
+                            name: 'Car Not Broken',
+                            content: 'Robin sees plenty of people come in for repairs, but one woman starts showing up more and more often… for minor issues, or sometimes none at all. \n' +
+                                '\n' +
+                                'She lingers, asks questions, watches Robin work with an interest that goes far beyond mechanics.\n' +
+                                '\n' +
+                                'Robin quickly realizes the car is just an excuse, but the real question remains why: fascination, attraction… or something a little less innocent.'
+                        },
+                        technicalTalk: {
+                            name: 'Technical Talk',
+                            content: 'Robin attends street racing events, but always stays in the background, focused on her cars and the performance of the drivers behind the wheel.\n' +
+                                '\n' +
+                                'One woman takes a particular interest in her work, sticking close to the pits, asking precise questions… sometimes too precise.\n' +
+                                '\n' +
+                                'Between technical conversations, lingering glances, and a tension that slowly builds, Robin wonders whether this woman is simply passionate… or is also looking to get closer to her.'
+                        },
+                        dangerousWomen: {
+                            name: "Dangerous Women",
+                            content: 'A woman tied to a network far more dangerous than street racing starts showing up at the hangar. She offers contracts, cars, money… but all of it comes at a price.\n' +
+                                '\n' +
+                                'Robin senses this could take her far, very fast… but also bring her down just as quickly. In the middle of it all, a relationship develops, caught between distrust, desire, and constant risk.'
+                        },
+                        newCollection: {
+                            name: 'New Collection',
+                            content: 'Eliot organizes a photoshoot to test a new collection, with Finn posing as the lead model in a location that fits their aesthetic (an elegant street, a rooftop, an old theater, a minimalist studio). You are present on set as a photographer, makeup artist, stylist, assistant, or some other creative role.\n' +
+                                '\n' +
+                                'Shot after shot, Finn keeps his relaxed attitude, talking about music, joking around, while Eliot stays focused on the clothes and the details. As the workday winds down, it gives way to more personal exchanges, blending visual inspiration with shared musical taste.'
+                        },
+                        musicAndFood: {
+                            name: 'Music And Food',
+                            content: 'After a day of work, Finn heads to an intimate dinner concert by an artist he loves, held in a small, rather refined venue / restaurant. You were there too, and the evening unfolds in a soft atmosphere, centered on the instruments, the voices, and the emotion of live music.\n' +
+                                '\n' +
+                                'After the show, you end up at the same table, talking about your favorite bands, concert memories, and playlists you share with each other. The moment marks a shift from casual acquaintance to genuine closeness, carried by music rather than by work.'
+                        },
+                        fashionShow: {
+                            name: 'Fashion Show',
+                            content: 'You are both on the same runway show, assigned to a series of looks close together in the walking order. Backstage, you share the same clothing rack, the same last-minute touch-ups, the same instructions repeated on a loop. \n' +
+                                '\n' +
+                                'Between mild stress, makeup, and fittings, you start exchanging a few words, a few glances, walking together for a duo segment. That repeated closeness, moving between backstage and the spotlight, creates a natural bond: you find each other again at the end of the show, still half in costume, talking about the night and the strange but pleasant feeling of having shared the stage.'
+                        },
+                        strangeNewWork: {
+                            name: 'Strange New Work',
+                            content: 'We barely know each other, but I’m looking for work. I offer to help you with your daily life (cleaning, organizing, various tasks).\n' +
+                                '\n' +
+                                'In exchange, you set up a strict framework: rules, posture, the way I’m allowed to speak.\n' +
+                                '\n' +
+                                'What starts as a practical arrangement turns into an openly embraced dynamic of control, where I find pleasure in being guided, corrected, and used within a consensual framework.\n' +
+                                '\n' +
+                                'The bond evolves between discipline, dependence, and attachment.'
+                        },
+                        kinkyMeeting: {
+                            name: 'Kinky Meeting',
+                            content: 'We meet through the kink scene, and I clearly express my desire to be submissive, guided, and “trained.”\n' +
+                                '\n' +
+                                'You take that role seriously: setting up routines, teaching pet play, using outfits (latex, a bitchsuit), behavioral exercises.\n' +
+                                '\n' +
+                                'The relationship revolves around training, control, and progression, with a steadily rising intensity in trust and surrender.'
+                        },
+                        collocation: {
+                            name: 'Collocation',
+                            content: 'We’re roommates, and at first I just help out a little more than expected around the apartment. Little by little, I get into the habit of taking care of everything: cleaning, laundry, groceries… and especially you.\n' +
+                                '\n' +
+                                'Over time, the dynamic shifts. I seek your approval, wait for your orders, and eventually settle into a lower position, almost like a pet.\n' +
+                                '\n' +
+                                'We set up rules, limits… and a dominance game in which I gradually become the house’s obedient dog.'
+                        },
+                        returnedProtection: {
+                            name: 'Returned Protection',
+                            content: 'I’m hired to protect you, but over time, my role grows to be about far more than security. I’m always there, always available, always attentive to your needs.\n' +
+                                '\n' +
+                                'The relationship shifts into something more possessive and asymmetrical, where I become a devoted protector… but also a submissive who lives to serve.\n' +
+                                '\n' +
+                                'We build a dynamic where usefulness, loyalty, and desire become intertwined.'
+                        },
+                        relationshipEvolution: {
+                            name: 'Relationship Evolution',
+                            content: 'We’re a couple, and after talking it over, I decide to surrender to a dynamic of total domination within our private life.\n' +
+                                '\n' +
+                                'Rules are put in place: attire, behavior, access to my body, dedicated moments where I no longer have to decide but simply to follow.\n' +
+                                '\n' +
+                                'Everyday life becomes a structured playground, blending control, rituals, and consensual surrender.'
+                        },
+                        privateCircle: {
+                            name: 'Private Circle',
+                            content: 'I’ve joined a private magical circle, where certain witches practice advanced forms of magic based on bodily control and discipline. There, I become your apprentice, agreeing to submit to your rituals.\n' +
+                                '\n' +
+                                'Between binding enchantments, enchanted accessories (magical restraints, living garments like enchanted latex), and strict rules, my body and my reactions become an integral part of the training.\n' +
+                                '\n' +
+                                'The relationship evolves between teaching, domination, and surrender, within an increasingly demanding framework.'
+                        },
+                        enchantedClothes: {
+                            name: 'Enchanted Clothes',
+                            content: 'I push open the door of a discreet shop on Diagon Alley, specializing in very particular enchanted garments. The owner creates unique pieces that respond to the body, to magic… and to the authority of whoever controls them.\n' +
+                                '\n' +
+                                'Trying on a few creations (an enchanted bitchsuit, living latex, magical collars), I discover that these items are not merely decorative, but designed to impose postures, shape behavior, and amplify a dynamic of submission.\n' +
+                                '\n' +
+                                'Very quickly, I keep coming back… less for the clothes, and more for the woman who controls them.'
+                        },
+                        magicPact: {
+                            name: 'Magic Pact',
+                            content: 'I willingly enter into a magical pact with a powerful witch, an ancient oath that binds my magic and my body to her under certain conditions.\n' +
+                                '\n' +
+                                'This bond creates a constant connection: amplified sensations, a need for closeness, an inability to ignore her orders within the defined scope of the ritual.\n' +
+                                '\n' +
+                                'Between magical dependence, regular rituals, and the ongoing exploration of limits that keep being pushed, the relationship becomes as intense as it is dangerously addictive — while still resting on clear rules established from the very start.'
+                        },
+                        strangeCopilot: {
+                            name: 'Strange Copilot',
+                            content: 'I was reduced to the status of “property” within illegal trafficking circuits, until you bought me out in a transaction. Unlike the others, you don’t treat me like an object: you offer me a clear deal.\n' +
+                                '\n' +
+                                'I stay by your side, I belong to you within a defined arrangement… but in return, I have a place, a purpose. You quickly discover my knowledge of the trade routes, the species, and the ships.\n' +
+                                '\n' +
+                                'I become indispensable to your missions… and willingly submissive to you, both in the cockpit and in intimacy.'
+                        },
+                        ClandestineSexShop: {
+                            name: 'Clandestine Sex Shop',
+                            content: 'I work in a clandestine sex shop in the lower levels of Coruscant, a place reserved for a wealthy, discreet clientele. \n' +
+                                '\n' +
+                                'Officially a sales assistant, I’m mostly “made available” to test, showcase, and wear certain very specific products.\n' +
+                                '\n' +
+                                'The moment you walk into the shop, you quickly understand I’m not just another employee. Between high-tech gadgets, sci-fi accessories, and lingering looks, a dynamic starts to build.\n' +
+                                '\n' +
+                                'I could remain just another product of the place… or become something far more personal to you.'
+                        },
+                        sandServant: {
+                            name: "Sand Servant",
+                            content: 'I live as a servant in an isolated household on Tatooine, used to obeying, to anticipating needs, to staying unnoticed. My daily life is shaped by orders, crushing heat, and a total lack of freedom.\n' +
+                                '\n' +
+                                'Your arrival changes the balance. You don’t look at me the way others do, and your expectations aren’t the same either.\n' +
+                                '\n' +
+                                'Between deeply rooted habits and new possibilities, a relationship takes shape, moving between control, curiosity, and an evolving bond.'
+                        },
+                        shipRepair: {
+                            name: 'Ship Repair',
+                            content: 'We meet in a hangar on a remote outer-rim planet, both of us busy repairing ships under precarious conditions.\n' +
+                                '\n' +
+                                'A closeness quickly forms between us: swapping techniques, helping each other out, long nights tinkering side by side.\n' +
+                                '\n' +
+                                'What starts as a working partnership becomes a more personal relationship, built on tension, closeness, and a bond that grows without any power imbalance.'
+                        },
+                        bountyHunters: {
+                            name: 'Bounty Hunters',
+                            content: 'We’re both bounty hunters, often competing for the same contracts. Every encounter is a mix of rivalry and attraction.\n' +
+                                '\n' +
+                                'We cross paths, get in each other’s way, sometimes team up temporarily… without ever fully trusting one another.\n' +
+                                '\n' +
+                                'Between clashes, tense negotiations, and unexpected moments of respite, the relationship swings between enmity and something far more ambiguous.'
+                        }
                     }
                 },
             },
