@@ -1,11 +1,11 @@
 .Contexts {
-	width: min(1400px, calc(100% - 80px));
+	width:  min(1400px, calc(100% - 80px));
 	margin: 40px auto 80px;
 
-	.title {
-		text-align: center;
-		font-size:  128px;
-		margin:     0;
+	.pageTitle {
+		font-size:     128px;
+		text-align:    center;
+		margin-bottom: 32px;
 
 		&::before {
 			content: "~ ";
@@ -17,37 +17,65 @@
 	}
 
 	.contextsList {
-		display: flex;
+		display:        flex;
 		flex-direction: column;
-		gap: 28px;
+		gap:            28px;
 	}
 
 	.contextCard {
-		display: grid;
-		grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.9fr);
-		align-items: center;
-		gap: 32px;
-		padding: 28px 36px;
-		border: 3px solid var(--default-border-color);
-		border-radius: 24px;
+		margin:           auto;
+		width:            1200px;
+		border:           3px solid var(--default-border-color);
+		border-radius:    24px;
 		background-color: var(--button-background);
+		overflow:         hidden;
+		transition:       border-radius 0.28s ease,
+						  box-shadow 0.28s ease,
+						  transform 0.28s ease;
+
+		&.isOpen {
+			border-radius: 30px;
+			box-shadow:    0 18px 40px rgba(0, 0, 0, 0.08);
+		}
+	}
+
+	.contextButton {
+		width:      100%;
+		border:     none;
+		background: transparent;
+		padding:    28px 36px;
+		text-align: left;
+		cursor:     pointer;
+	}
+
+	.contextHeading {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		align-items: center;
+		gap: 20px;
 	}
 
 	.contextTitle {
-		margin: 0;
-		font-size: clamp(48px, 6vw, 76px);
+		margin:      0;
+		font-size:   clamp(48px, 6vw, 76px);
 		line-height: 1;
 		font-weight: 700;
-		color: var(--default-text-color);
-		word-break: break-word;
+		color:       var(--default-text-color);
+		word-break:  break-word;
 	}
 
 	.contextMeta {
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
+		display: grid;
+		grid-template-columns: auto auto;
+		column-gap: 14px;
+		row-gap: 2px;
+		justify-self: end;
+		justify-items: start;
+		width: fit-content;
+		text-align: left;
 
 		p {
+			display: contents;
 			margin: 0;
 			font-size: clamp(24px, 3vw, 42px);
 			line-height: 1.05;
@@ -55,18 +83,48 @@
 		}
 
 		.label {
-			opacity: 0.9;
+			white-space: nowrap;
+			font-weight: 400;
 		}
 
 		.value {
-			opacity: 0.9;
+			white-space: nowrap;
+			text-align: left;
+			font-weight: 400;
+		}
+	}
+
+	.contextContent {
+		max-height: 0;
+		opacity:    0;
+		overflow:   hidden;
+		transform:  translateY(-8px);
+		transition: max-height 0.35s ease,
+					opacity 0.24s ease,
+					transform 0.24s ease,
+					padding 0.35s ease;
+		padding:    0 36px;
+
+		p {
+			margin:      0;
+			font-size:   clamp(20px, 2.2vw, 28px);
+			line-height: 1.5;
+			color:       var(--default-text-color);
+			white-space: pre-line;
+		}
+
+		&.isVisible {
+			max-height: 500px;
+			opacity:    1;
+			transform:  translateY(0);
+			padding:    0 36px 32px;
 		}
 	}
 
 	@media (max-width: 980px) {
-		.contextCard {
+		.contextHeading {
 			grid-template-columns: 1fr;
-			gap: 20px;
+			gap:                   20px;
 		}
 
 		.contextMeta {
@@ -83,19 +141,30 @@
 			font-size: 100px;
 		}
 
-		.contextCard {
+		.contextButton {
 			padding: 24px 22px;
+		}
+
+		.contextCard {
 			border-radius: 20px;
 		}
 
 		.contextTitle {
 			font-size: clamp(42px, 9vw, 64px);
 		}
+
+		.contextContent {
+			padding: 0 22px;
+
+			&.isVisible {
+				padding: 0 22px 24px;
+			}
+		}
 	}
 
 	@media (max-width: 580px) {
 		.pageTitle {
-			font-size: 70px;
+			font-size:     70px;
 			margin-bottom: 20px;
 		}
 
@@ -103,10 +172,12 @@
 			gap: 18px;
 		}
 
-		.contextCard {
+		.contextButton {
 			padding: 18px 16px;
-			gap: 14px;
-			border-width: 2px;
+		}
+
+		.contextCard {
+			border-width:  2px;
 			border-radius: 16px;
 		}
 
@@ -117,6 +188,18 @@
 		.contextMeta {
 			p {
 				font-size: clamp(18px, 5vw, 26px);
+			}
+		}
+
+		.contextContent {
+			padding: 0 16px;
+
+			p {
+				font-size: 18px;
+			}
+
+			&.isVisible {
+				padding: 0 16px 18px;
 			}
 		}
 	}
