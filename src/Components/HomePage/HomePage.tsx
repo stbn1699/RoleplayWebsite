@@ -33,9 +33,9 @@ export default function HomePage() {
 
             <div className="buttons">
                 <Button label={t('characters')} onClick={() => navigate('/characters')} />
-                <Button label={t('contexts')} onClick={() => navigate('/page-2')} />
-                <Button label={t('rules')} onClick={() => navigate('/page-3')} />
-                <Button label={t('infos')} onClick={() => navigate('/page-4')} />
+                <Button label={t('contexts')} onClick={() => navigate('/contexts')} />
+                <Button label={t('rules')} onClick={() => navigate('/rules')} />
+                <Button label={t('infos')} onClick={() => navigate('/infos')} />
             </div>
         </div>
     )

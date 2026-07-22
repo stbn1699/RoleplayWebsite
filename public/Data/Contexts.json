@@ -1,0 +1,16 @@
+[
+	{
+		"id": 1,
+		"name": "Intrusion",
+		"universe": "IRL",
+		"character": "elina",
+		"chatacterId": 1
+	},
+	{
+		"id": 2,
+		"name": "privateParty",
+		"universe": "IRL",
+		"character": "elina",
+		"chatacterId": 1
+	}
+]

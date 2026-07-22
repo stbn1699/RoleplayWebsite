@@ -124,6 +124,24 @@ i18n
                                 '\n' +
                                 'Son univers tourne autour du body positive, du make-up qui met en valeur ses traits sans les lisser, et de discussions honnêtes avec sa communauté sur la confiance en soi, les relations, et la sexualité assumée sans être performée. Rae vit de partenariats triés sur le volet (lingerie, maquillage, bijoux, déco), de contenus exclusifs et de collaborations photo avec d’autres artistes, mais ce qui la distingue, c’est sa manière de rester accessible : on a l’impression d’être dans sa chambre avec elle plutôt que devant une vitrine parfaite.',
                         },
+                    },
+                    contexts: {
+                        intrusion: {
+                            name: 'Intrusion',
+                            content: 'Vers 2h du matin, après la fermeture progressive du bar, Elina remonte à son penthouse situé au dernier étage. En entrant, elle remarque immédiatement un détail inhabituel : une lumière est allumée dans le salon, alors qu’elle est certaine de l’avoir éteinte en partant.\n' +
+                                '\n' +
+                                'La sécurité n’a signalé aucune intrusion. Les caméras n’ont rien relevé d’anormal.\n' +
+                                '\n' +
+                                'En avançant, elle te découvre... installée chez elle, parfaitement calme, comme si elle était à sa place.'
+                        },
+                        privateParty: {
+                            name: 'Private Party',
+                            content: 'Lors d’une soirée privée organisée dans le sous-sol du bar, Elina supervise les premières tables de jeu encore en test.\n' +
+                                '\n' +
+                                'L’ambiance est feutrée, réservée à une poignée de clients triés sur le volet. Rapidement, tu attire son attention : tu enchaîne les victoires avec une aisance déconcertante, sans qu’aucune triche ne soit détectée.\n' +
+                                '\n' +
+                                ' Plutôt que de faire intervenir qui que ce soit, Elina décide de la faire venir dans un salon privé pour comprendre qui elle est… et comment elle joue.'
+                        }
                     }
                 },
             },
