@@ -23,12 +23,13 @@
 	}
 
 	.contextCard {
+		position:         relative;
 		margin:           auto;
 		width:            1200px;
 		border:           3px solid var(--default-border-color);
 		border-radius:    24px;
 		background-color: var(--button-background);
-		overflow:         hidden;
+		overflow:         visible;
 		transition:       border-radius 0.28s ease,
 						  box-shadow 0.28s ease,
 						  transform 0.28s ease;
@@ -37,6 +38,28 @@
 			border-radius: 30px;
 			box-shadow:    0 18px 40px rgba(0, 0, 0, 0.08);
 		}
+	}
+
+	.nsfwIcon {
+		position: absolute;
+		top: -30px;
+		left: -30px;
+		width: 100px;
+		height: 100px;
+		background-color: var(--nsfw-color);
+		transform: rotate(-14deg);
+		pointer-events: none;
+		z-index: 2;
+
+		-webkit-mask-image:    url('public/Nsfw.svg');
+		-webkit-mask-repeat:   no-repeat;
+		-webkit-mask-position: center;
+		-webkit-mask-size:     contain;
+
+		mask-image:            url('public/Nsfw.svg');
+		mask-repeat:           no-repeat;
+		mask-position:         center;
+		mask-size:             contain;
 	}
 
 	.contextButton {
@@ -172,6 +195,13 @@
 			border-radius: 20px;
 		}
 
+		.nsfwIcon {
+			top:    12px;
+			left:   12px;
+			width:  60px;
+			height: 60px;
+		}
+
 		.contextTitle {
 			font-size: clamp(42px, 9vw, 64px);
 		}
@@ -202,6 +232,13 @@
 		.contextCard {
 			border-width:  2px;
 			border-radius: 16px;
+		}
+
+		.nsfwIcon {
+			top:    10px;
+			left:   10px;
+			width:  50px;
+			height: 50px;
 		}
 
 		.contextTitle {

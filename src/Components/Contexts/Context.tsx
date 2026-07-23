@@ -7,6 +7,7 @@ type Context = {
     id: number
     name: string
     universe: string[]
+    nsfw: boolean
     character: string[]
     chatacterId?: number | number[]
 }
@@ -59,6 +60,13 @@ export default function Contexts() {
                                 aria-expanded={isOpen}
                                 aria-controls={contentId}>
                                 <div className="contextHeading">
+                                    {context.nsfw && (
+                                        <span
+                                            className="nsfwIcon"
+                                            aria-label="Contenu réservé aux adultes"
+                                            title="NSFW"
+                                        />
+                                    )}
                                     <h2 className="contextTitle">
                                         {t(`${context.name}.name`)}
                                     </h2>
