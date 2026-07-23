@@ -2,3 +2,6 @@
 .idea
 /build
 package-lock.json
+
+# pour éviter que le script umami.js soit actif pendant les tests, uniquement en production
+index.html
