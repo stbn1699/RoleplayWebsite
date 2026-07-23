@@ -4,10 +4,12 @@ import ThemeToggle from './Components/ThemeToggle/ThemeToggle'
 import Characters from "./Components/Characters/Characters";
 import CharacterDetail from "./Components/CharacterDetail/CharacterDetail";
 import Contexts from "./Components/Contexts/Context";
+import LanguageGate from "./LanguageGate/LanguageGate";
 
 export default function App() {
     return (
         <>
+            <LanguageGate />
             <ThemeToggle />
 
             <Routes>
