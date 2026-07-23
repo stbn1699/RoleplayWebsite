@@ -127,6 +127,7 @@ i18n
                         },
                     },
                     contexts: {
+                        title: 'Contextes',
                         intrusion: {
                             name: 'Intrusion',
                             content: 'Vers 2h du matin, après la fermeture progressive du bar, Elina remonte à son penthouse situé au dernier étage. En entrant, elle remarque immédiatement un détail inhabituel : une lumière est allumée dans le salon, alors qu’elle est certaine de l’avoir éteinte en partant.\n' +
@@ -444,6 +445,7 @@ i18n
                         },
                     },
                     contexts: {
+                        title: 'Contexts',
                         intrusion: {
                             name: 'Intrusion',
                             content: 'Around 2am, once the bar has gradually closed for the night, Elina heads up to her penthouse on the top floor. As soon as she walks in, she notices something unusual: a light is on in the living room, even though she is certain she turned it off before leaving.\n' +

@@ -42,7 +42,7 @@ export default function Contexts() {
 
     return (
         <div className="Contexts">
-            <h1 className="title">Contexts</h1>
+            <h1 className="title">{t('title')}</h1>
 
             <div className="contextsList">
                 {contexts.map((context) => {
