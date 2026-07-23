@@ -5,6 +5,8 @@ import Characters from "./Components/Characters/Characters";
 import CharacterDetail from "./Components/CharacterDetail/CharacterDetail";
 import Contexts from "./Components/Contexts/Context";
 import LanguageGate from "./LanguageGate/LanguageGate";
+import Infos from "./Components/Infos/Infos";
+import Rules from "./Components/Rules/Rules";
 
 export default function App() {
     return (
@@ -17,6 +19,8 @@ export default function App() {
                 <Route path="/characters" element={<Characters />} />
                 <Route path="/characterdetail" element={<CharacterDetail />} />
                 <Route path="/contexts" element={<Contexts />} />
+                <Route path="/Infos" element={<Infos />} />
+                <Route path="/Rules" element={<Rules />} />
             </Routes>
         </>
     )

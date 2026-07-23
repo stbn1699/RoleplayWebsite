@@ -328,7 +328,53 @@ i18n
                                 '\n' +
                                 'Entre affrontements, négociations tendues et moments de répit inattendus, la relation oscille entre ennemies et quelque chose de beaucoup plus ambigu.'
                         }
-                    }
+                    },
+                    infos: {
+                        title: 'Infos',
+                        whoAmI: {
+                            title: 'Qui suis-je ?',
+                            content: 'Salut salut ! C’est Elyna :)\n' +
+                                '\n' +
+                                'Je vais parler un peu de moi sur cette page pour celleux qui veulent des informations ^^\n' +
+                                '\n' +
+                                'En ce qui me concerne, je suis une roleplayeuse de 23 ans, française (69) et transgenre. Je parle anglais assez couramment, donc je suis parfaitement capable de rp en anglais !',
+                        },
+                        website: {
+                            title: 'Le site',
+                            content: 'Le site sur lequel tu es actuellement a été entièrement codé par mes soins. Le projet est open source sur GitHub — demande-moi sur Insta, je t’enverrai le lien avec plaisir pour en discuter !',
+                        },
+                        findMe: {
+                            title: 'Me retrouver',
+                            content: 'Il y a plusieurs moyens de me retrouver !',
+                        },
+                        links: {
+                            roleplayInstagram: 'Instagram roleplay',
+                            personalInstagram: 'Instagram perso',
+                            personalDiscord: 'Discord perso',
+                        },
+                    },
+                    rules: {
+                        title: 'Règlement',
+                        intro: 'Quelques règles simples mais non négociables, pour que cet espace reste sain pour tout le monde.',
+                        list: {
+                            respect: {
+                                title: 'Respect avant tout',
+                                content: 'Le racisme, l’homophobie et la transphobie sont strictement interdits ici. Zéro tolérance, sans exception.',
+                            },
+                            limits: {
+                                title: 'Les limites sont sacrées',
+                                content: 'Même dans les contextes soumis/dominants, les limites établies restent infranchissables. Le consentement prime toujours, peu importe le rôle joué.',
+                            },
+                            noMen: {
+                                title: 'Espace réservé',
+                                content: 'Cet espace n’est pas ouvert aux hommes. Aucune exception, aucune négociation possible.',
+                            },
+                            noDm: {
+                                title: 'Pas de réponse aux MP',
+                                content: 'Je ne réponds pas aux demandes de message privé non sollicitées. Merci de respecter ce choix.',
+                            },
+                        },
+                    },
                 },
             },
             en: {
@@ -646,7 +692,49 @@ i18n
                                 '\n' +
                                 'Between clashes, tense negotiations, and unexpected moments of respite, the relationship swings between enmity and something far more ambiguous.'
                         }
-                    }
+                    },
+                    infos: {
+                        title: 'Informations',
+                        whoAmI: {
+                            title: 'Who am I?',
+                            content: 'Hey hey! It’s Elyna :)\n' +
+                                '\n' +
+                                'I’ll share a bit about myself on this page for anyone who wants some info ^^\n' +
+                                '\n' +
+                                'As for me, I’m a 23-year-old roleplayer, French (from the Rhône area, dept. 69), and transgender. I speak English quite fluently, so I’m perfectly capable of roleplaying in English too!',
+                        },
+                        website: {
+                            title: 'The website',
+                            content: 'The site you’re currently on was entirely coded by me. The project is open source on GitHub — ask me on Insta and I’ll happily send you the link so we can talk about it!',
+                        },
+                        findMe: {
+                            title: 'Find me',
+                            content: 'There are several ways to find me!',
+                        },
+                        links: {
+                            roleplayInstagram: 'Roleplay Instagram',
+                            personalInstagram: 'Personal Instagram',
+                            personalDiscord: 'Personal Discord',
+                        },
+                    },
+                    rules: {
+                        title: 'Rules',
+                        intro: 'A few simple but non-negotiable rules, so this space stays safe for everyone.',
+                        list: {
+                            respect: {
+                                title: 'Respect above all',
+                                content: 'Racism, homophobia, and transphobia are strictly forbidden here. Zero tolerance, no exceptions.',
+                            },
+                            limits: {
+                                title: 'Limits are sacred',
+                                content: 'Even within submissive/dominant contexts, established limits remain non-negotiable. Consent always comes first, no matter the role being played.',
+                            },
+                            noMen: {
+                                title: 'Reserved space',
+                                content: 'This space is not open to men. No exceptions, no negotiation.',
+                            }
+                        },
+                    },
                 },
             },
         },
