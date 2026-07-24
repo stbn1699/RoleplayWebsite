@@ -8,6 +8,7 @@ import LanguageGate from "./LanguageGate/LanguageGate";
 import Infos from "./Components/Infos/Infos";
 import Rules from "./Components/Rules/Rules";
 import HomeButton from "./Components/HomeButton/HomeButton";
+import Version from "./Components/Version/Version";
 
 export default function App() {
     return (
@@ -23,6 +24,7 @@ export default function App() {
                 <Route path="/contexts" element={<Contexts />} />
                 <Route path="/Infos" element={<Infos />} />
                 <Route path="/Rules" element={<Rules />} />
+                <Route path="/Version" element={<Version />} />
             </Routes>
         </>
     )
