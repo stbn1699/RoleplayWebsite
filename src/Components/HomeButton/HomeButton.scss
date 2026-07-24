@@ -1,0 +1,57 @@
+.homeButton {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 1000;
+	width: 56px;
+	height: 56px;
+	border: none;
+	background: transparent;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--text-color);
+		outline-offset: 3px;
+		border-radius: 8px;
+	}
+}
+
+.homeIcon {
+	display: block;
+	width: 48px;
+	height: 48px;
+	background-color: var(--text-color);
+
+	-webkit-mask-image: url('Home.svg');
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: contain;
+
+	mask-image: url('Home.svg');
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: contain;
+}
+
+@media (max-width: 580px) {
+	.homeButton {
+		top: 12px;
+		left: 12px;
+		width: 44px;
+		height: 44px;
+	}
+
+	.homeIcon {
+		width: 28px;
+		height: 28px;
+	}
+}

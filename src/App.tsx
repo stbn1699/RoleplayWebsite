@@ -7,12 +7,14 @@ import Contexts from "./Components/Contexts/Context";
 import LanguageGate from "./LanguageGate/LanguageGate";
 import Infos from "./Components/Infos/Infos";
 import Rules from "./Components/Rules/Rules";
+import HomeButton from "./Components/HomeButton/HomeButton";
 
 export default function App() {
     return (
         <>
             <LanguageGate />
             <ThemeToggle />
+            <HomeButton />
 
             <Routes>
                 <Route path="/" element={<HomePage />} />
