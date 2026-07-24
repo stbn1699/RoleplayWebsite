@@ -31,12 +31,12 @@
 	height: 48px;
 	background-color: var(--text-color);
 
-	-webkit-mask-image: url('Home.svg');
+	-webkit-mask-image: url('/Home.svg');
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-position: center;
 	-webkit-mask-size: contain;
 
-	mask-image: url('Home.svg');
+	mask-image: url('/Home.svg');
 	mask-repeat: no-repeat;
 	mask-position: center;
 	mask-size: contain;
