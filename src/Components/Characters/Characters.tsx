@@ -102,7 +102,7 @@ export default function Characters() {
                             type="button"
                             className="characterButton"
                             onClick={() => handleCharacterClick(character.name)}
-                            aria-label={`Ouvrir la fiche de ${character.name}`}
+                            aria-label={t('openCharacter', {name: character.name})}
                         >
                             <img
                                 className="characterImage"

@@ -1,28 +1,27 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { changeAppLanguage, getPreferredLanguage } from '../i18n'
 import './LanguageGate.scss'
 
-const LANGUAGE_STORAGE_KEY = 'preferredLanguage'
-
 export default function LanguageGate() {
-    const { i18n } = useTranslation()
+    const { t } = useTranslation('translation', { keyPrefix: 'languageGate' })
+    const { t: translateCommon } = useTranslation('translation', { keyPrefix: 'common' })
     const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
-        const savedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY)
+        const savedLanguage = getPreferredLanguage()
 
         if (savedLanguage === 'fr' || savedLanguage === 'en') {
-            i18n.changeLanguage(savedLanguage)
+            void changeAppLanguage(savedLanguage)
             setIsOpen(false)
             return
         }
 
         setIsOpen(true)
-    }, [i18n])
+    }, [])
 
     const handleSelectLanguage = async (language: 'fr' | 'en') => {
-        localStorage.setItem(LANGUAGE_STORAGE_KEY, language)
-        await i18n.changeLanguage(language)
+        await changeAppLanguage(language)
         setIsOpen(false)
     }
 
@@ -33,17 +32,17 @@ export default function LanguageGate() {
             className="languageGateOverlay"
             role="dialog"
             aria-modal="true"
-            aria-label="Sélection de la langue"
+            aria-label={t('dialogLabel')}
         >
             <div className="languageGate">
                 <button
                     type="button"
                     className="languageChoice"
                     onClick={() => handleSelectLanguage('fr')}
-                    aria-label="Passer en français"
+                    aria-label={t('frenchChoice')}
                 >
-                    <img className="flagIcon" src="/French.svg" alt="Français" />
-                    <span className="label">Choisis ta langue !</span>
+                    <img className="flagIcon" src="/French.svg" alt={translateCommon('frenchFlag')} />
+                    <span className="label">{t('frenchChoice')}</span>
                 </button>
 
                 <div className="separator" />
@@ -52,10 +51,10 @@ export default function LanguageGate() {
                     type="button"
                     className="languageChoice"
                     onClick={() => handleSelectLanguage('en')}
-                    aria-label="Switch to English"
+                    aria-label={t('englishChoice')}
                 >
-                    <span className="label">Choose your language!</span>
-                    <img className="flagIcon" src="/English.svg" alt="English" />
+                    <span className="label">{t('englishChoice')}</span>
+                    <img className="flagIcon" src="/English.svg" alt={translateCommon('englishFlag')} />
                 </button>
             </div>
         </div>

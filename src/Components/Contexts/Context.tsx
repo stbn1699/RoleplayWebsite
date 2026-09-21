@@ -27,6 +27,7 @@ export default function Contexts() {
     const [openContextId, setOpenContextId] = useState<number | null>(null)
     const {t} = useTranslation('translation', {keyPrefix: 'contexts'})
     const {t: translateStatus} = useTranslation('translation', {keyPrefix: 'status'})
+    const {t: translateCommon} = useTranslation('translation', {keyPrefix: 'common'})
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -87,8 +88,8 @@ export default function Contexts() {
                                     {context.nsfw && (
                                         <span
                                             className="nsfwIcon"
-                                            aria-label="Contenu réservé aux adultes"
-                                            title="NSFW"
+                                            aria-label={translateCommon('adultContent')}
+                                            title={translateCommon('nsfwTitle')}
                                         />
                                     )}
                                     <h2 className="contextTitle">
@@ -96,7 +97,7 @@ export default function Contexts() {
                                     </h2>
                                     <div className="contextMeta">
                                         <p>
-                                            <span className="label">Univers :</span>
+                                            <span className="label">{t('universe')}</span>
                                             <span className="value">
                                 {context.universe.join(' / ')}
                             </span>
@@ -108,7 +109,7 @@ export default function Contexts() {
                             {visibleCharacters.length > 0 && (
                                 <div className="contextMeta contextCharacters">
                                     <p>
-                                        <span className="label">Personnage :</span>
+                                        <span className="label">{t('character')}</span>
                                         <span className="value">
                                             {visibleCharacters.map((character, index) => (
                                                 <span key={character}>

@@ -33,13 +33,13 @@
 
 ### Internationalisation
 
-- [ ] Traduire les textes codés en dur : `Personnage`, `Univers`, `Character not found`, messages d'erreur et labels ARIA.
-- [ ] Traduire les titres et textes de la fenêtre de sélection de langue.
-- [ ] Ajouter une langue de secours dans i18next au lieu de `fallbackLng: false`.
-- [ ] Vérifier que toutes les clés de traduction françaises existent en anglais, et inversement.
-- [ ] Synchroniser l'attribut `lang` de `<html>` avec la langue sélectionnée.
-- [ ] Centraliser la clé `preferredLanguage` et la logique de changement de langue.
-- [ ] Déplacer les traductions volumineuses dans `locales/fr.json` et `locales/en.json`.
+- [x] Traduire les textes codés en dur : `Personnage`, `Univers`, `Character not found`, messages d'erreur et labels ARIA.
+- [x] Traduire les titres et textes de la fenêtre de sélection de langue.
+- [x] Ajouter une langue de secours dans i18next au lieu de `fallbackLng: false`.
+- [x] Vérifier que toutes les clés de traduction françaises existent en anglais, et inversement.
+- [x] Synchroniser l'attribut `lang` de `<html>` avec la langue sélectionnée.
+- [x] Centraliser la clé `preferredLanguage` et la logique de changement de langue.
+- [x] Déplacer les traductions volumineuses dans `locales/fr.json` et `locales/en.json`.
 
 ### Routes et navigation
 

@@ -2,16 +2,15 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import './HomePage.scss'
 import Button from "../Button/Button";
-
-const LANGUAGE_STORAGE_KEY = 'preferredLanguage'
+import { changeAppLanguage } from '../../i18n'
 
 export default function HomePage() {
     const navigate = useNavigate()
-    const { t, i18n } = useTranslation('translation', { keyPrefix: 'homepage' })
+    const { t } = useTranslation('translation', { keyPrefix: 'homepage' })
+    const { t: translateCommon } = useTranslation('translation', { keyPrefix: 'common' })
 
     const handleLanguageChange = async (language: 'fr' | 'en') => {
-        localStorage.setItem(LANGUAGE_STORAGE_KEY, language)
-        await i18n.changeLanguage(language)
+        await changeAppLanguage(language)
     }
 
     return (
@@ -23,18 +22,18 @@ export default function HomePage() {
                     type="button"
                     className="flagButton"
                     onClick={() => handleLanguageChange('fr')}
-                    aria-label="Passer en français"
+                    aria-label={t('openLanguageFrench')}
                 >
-                    <img src="/French.svg" alt="Français" />
+                    <img src="/French.svg" alt={translateCommon('frenchFlag')} />
                 </button>
 
                 <button
                     type="button"
                     className="flagButton"
                     onClick={() => handleLanguageChange('en')}
-                    aria-label="Switch to English"
+                    aria-label={t('openLanguageEnglish')}
                 >
-                    <img src="/English.svg" alt="English" />
+                    <img src="/English.svg" alt={translateCommon('englishFlag')} />
                 </button>
             </div>
 
