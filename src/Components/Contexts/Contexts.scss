@@ -117,6 +117,10 @@
 		}
 	}
 
+	.contextCharacters {
+		padding: 0 36px 20px;
+	}
+
 	.characterLink {
 		border:                none;
 		background:            transparent;
@@ -209,6 +213,10 @@
 				padding: 0 22px 24px;
 			}
 		}
+
+		.contextCharacters {
+			padding: 0 22px 18px;
+		}
 	}
 
 	@media (max-width: 580px) {
@@ -257,6 +265,10 @@
 			&.isVisible {
 				padding: 0 16px 18px;
 			}
+		}
+
+		.contextCharacters {
+			padding: 0 16px 14px;
 		}
 	}
 }

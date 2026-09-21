@@ -18,7 +18,7 @@
 
 - [x] Transformer les images de personnages cliquables en vrais boutons ou liens accessibles au clavier.
 - [x] Ajouter des styles `:focus-visible` aux boutons de langue, boutons principaux et bouton de changement d'image.
-- [ ] Éviter les liens `<a>` imbriqués dans le bouton d'ouverture d'un contexte.
+- [x] Éviter les liens `<a>` imbriqués dans le bouton d'ouverture d'un contexte.
 - [ ] Empêcher le clic sur un personnage dans un contexte de déclencher également l'ouverture/fermeture de la carte.
 - [ ] Ajouter un nom accessible au dialogue de sélection de langue.
 - [ ] Ajouter la gestion de la touche `Escape` pour le dialogue de langue.

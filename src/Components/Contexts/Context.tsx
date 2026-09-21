@@ -70,28 +70,7 @@ export default function Contexts() {
                                     <h2 className="contextTitle">
                                         {t(`${context.name}.name`)}
                                     </h2>
-
                                     <div className="contextMeta">
-                                        {visibleCharacters.length > 0 && (
-                                            <p>
-                                                <span className="label">Personnage :</span>
-
-                                                <span className="value">
-                                                    {visibleCharacters.map((character, index) => (
-                                                        <span key={character}>
-                                                            <a
-                                                                className="characterLink"
-                                                                onClick={() => handleCharacterClick(character)}
-                                                            >
-                                                                {formatCharacterName(character)}
-                                                            </a>
-                                                            {index < visibleCharacters.length - 1 && ' / '}
-                                                </span>
-                                                    ))}
-                                                </span>
-                                            </p>
-                                        )}
-
                                         <p>
                                             <span className="label">Univers :</span>
                                             <span className="value">
@@ -101,6 +80,28 @@ export default function Contexts() {
                                     </div>
                                 </div>
                             </button>
+
+                            {visibleCharacters.length > 0 && (
+                                <div className="contextMeta contextCharacters">
+                                    <p>
+                                        <span className="label">Personnage :</span>
+                                        <span className="value">
+                                            {visibleCharacters.map((character, index) => (
+                                                <span key={character}>
+                                                    <button
+                                                        type="button"
+                                                        className="characterLink"
+                                                        onClick={() => handleCharacterClick(character)}
+                                                    >
+                                                        {formatCharacterName(character)}
+                                                    </button>
+                                                    {index < visibleCharacters.length - 1 && ' / '}
+                                                </span>
+                                            ))}
+                                        </span>
+                                    </p>
+                                </div>
+                            )}
 
                             <div
                                 id={contentId}
