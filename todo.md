@@ -51,11 +51,11 @@
 
 ### Thème
 
-- [ ] Persister le thème clair/sombre dans `localStorage`.
-- [ ] Respecter éventuellement la préférence système `prefers-color-scheme` lors de la première visite.
-- [ ] Vérifier la mise à jour de la couleur du navigateur (`theme-color`) lors du changement de thème.
-- [ ] Corriger `--default-text-color`, utilisée dans `Contexts.scss` mais non définie.
-- [ ] Vérifier les contrastes en mode clair et sombre.
+- [x] Persister le thème clair/sombre dans `localStorage`.
+- [x] Respecter éventuellement la préférence système `prefers-color-scheme` lors de la première visite.
+- [x] Vérifier la mise à jour de la couleur du navigateur (`theme-color`) lors du changement de thème.
+- [x] Corriger `--default-text-color`, utilisée dans `Contexts.scss` mais non définie.
+- [x] Vérifier les contrastes en mode clair et sombre.
 
 ## Priorité 2 — Qualité de code
 

@@ -8,6 +8,7 @@
 :root {
 	--background-color:     #F2F2F0;
 	--text-color:           #191919;
+	--default-text-color:   var(--text-color);
 	--default-border-color: #191919;
 	--icon-color:           #D2D2D2;
 	--navlink-blue:         #1d4ed8;
@@ -17,6 +18,8 @@
 	--nsfw-color:           #ff4fa3;
 	--nsfw-shadow:          #00ff9c;
 	--button-border-width:  2px;
+	--theme-color:          #F2F2F0;
+	--error-color:          #B42318;
 }
 
 [data-theme='dark'] {
@@ -31,6 +34,8 @@
 	--nsfw-color:           #ff4fa3;
 	--nsfw-shadow:          #00ff9c;
 	--button-border-width:  1px;
+	--theme-color:          #191919;
+	--error-color:          #FFB4AB;
 }
 
 * {
@@ -67,7 +72,7 @@ body {
 }
 
 .pageStatusError {
-	color: #b42318;
+	color: var(--error-color);
 }
 
 .pageStatusPage {

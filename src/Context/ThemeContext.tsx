@@ -1,6 +1,17 @@
 import { createContext, ReactNode, useContext, useEffect, useState } from 'react'
 
 type Theme = 'light' | 'dark'
+const THEME_STORAGE_KEY = 'preferredTheme'
+
+function getInitialTheme(): Theme {
+    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY)
+
+    if (savedTheme === 'light' || savedTheme === 'dark') {
+        return savedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
 
 type ThemeContextType = {
     theme: Theme
@@ -10,10 +21,24 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-    const [theme, setTheme] = useState<Theme>('dark')
+    const [theme, setTheme] = useState<Theme>(getInitialTheme)
 
     useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme)
+        const root = document.documentElement
+
+        root.setAttribute('data-theme', theme)
+        root.style.colorScheme = theme
+        localStorage.setItem(THEME_STORAGE_KEY, theme)
+
+        let themeColorMeta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]')
+
+        if (!themeColorMeta) {
+            themeColorMeta = document.createElement('meta')
+            themeColorMeta.name = 'theme-color'
+            document.head.appendChild(themeColorMeta)
+        }
+
+        themeColorMeta.content = getComputedStyle(root).getPropertyValue('--theme-color').trim()
     }, [theme])
 
     const toggleTheme = () => {
