@@ -1,5 +1,5 @@
 import './Infos.scss'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 export default function Infos() {
     const { t } = useTranslation('translation', { keyPrefix: 'infos' })

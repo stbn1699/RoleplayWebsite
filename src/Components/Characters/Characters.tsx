@@ -1,14 +1,10 @@
-import {useEffect, useRef, useState} from "react";
-import {useNavigate} from "react-router-dom";
-import {useTranslation} from "react-i18next";
+import { useCallback, useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import './Characters.scss'
 import { ROUTES } from '../../routes'
-
-type Character = {
-    id: number
-    name: string
-    age: number
-}
+import { loadCharacters } from '../../services/dataService'
+import { useJsonResource } from '../../hooks/useJsonResource'
 
 type ImageType = 'thumbnail' | 'face'
 
@@ -16,36 +12,12 @@ export default function Characters() {
     const navigate = useNavigate()
     const {t} = useTranslation('translation', {keyPrefix: 'characters'})
     const {t: translateStatus} = useTranslation('translation', {keyPrefix: 'status'})
-    const [characters, setCharacters] = useState<Character[]>([])
-    const [isLoading, setIsLoading] = useState(true)
-    const [hasError, setHasError] = useState(false)
+    const loadData = useCallback((signal: AbortSignal) => loadCharacters(signal), [])
+    const { data, isLoading, hasError } = useJsonResource(loadData)
+    const characters = data ?? []
     const [imageType, setImageType] = useState<ImageType>('thumbnail')
     const [isAnimating, setIsAnimating] = useState(false)
     const animationTimeouts = useRef<ReturnType<typeof setTimeout>[]>([])
-
-    useEffect(() => {
-        const controller = new AbortController()
-
-        setIsLoading(true)
-        setHasError(false)
-
-        fetch('/Data/Characters.json', {signal: controller.signal})
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`Unable to load characters (${response.status})`)
-                }
-
-                return response.json()
-            })
-            .then((data: Character[]) => setCharacters(data))
-            .catch((error: unknown) => {
-                if (error instanceof DOMException && error.name === 'AbortError') return
-                setHasError(true)
-            })
-            .finally(() => setIsLoading(false))
-
-        return () => controller.abort()
-    }, [])
 
     const handleCharacterClick = (characterName: string) => {
         navigate(`${ROUTES.characterDetail}?characterName=${encodeURIComponent(characterName)}`)

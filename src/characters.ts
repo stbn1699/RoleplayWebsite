@@ -16,6 +16,6 @@ export const CHARACTER_NAMES = [
 
 export type CharacterName = typeof CHARACTER_NAMES[number]
 
-export function isCharacterName(value: string | null): value is CharacterName {
-    return value !== null && CHARACTER_NAMES.includes(value as CharacterName)
+export function isCharacterName(value: unknown): value is CharacterName {
+    return typeof value === 'string' && CHARACTER_NAMES.includes(value as CharacterName)
 }

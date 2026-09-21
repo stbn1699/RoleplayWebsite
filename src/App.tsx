@@ -1,15 +1,15 @@
 import { Routes, Route } from 'react-router-dom'
 import HomePage from './Components/HomePage/HomePage'
 import ThemeToggle from './Components/ThemeToggle/ThemeToggle'
-import Characters from "./Components/Characters/Characters";
-import CharacterDetail from "./Components/CharacterDetail/CharacterDetail";
-import Contexts from "./Components/Contexts/Context";
-import LanguageGate from "./LanguageGate/LanguageGate";
-import Infos from "./Components/Infos/Infos";
-import Rules from "./Components/Rules/Rules";
-import HomeButton from "./Components/HomeButton/HomeButton";
-import Version from "./Components/Version/Version";
-import NotFound from "./Components/NotFound/NotFound";
+import Characters from './Components/Characters/Characters'
+import CharacterDetail from './Components/CharacterDetail/CharacterDetail'
+import Contexts from './Components/Contexts/Context'
+import LanguageGate from './LanguageGate/LanguageGate'
+import Infos from './Components/Infos/Infos'
+import Rules from './Components/Rules/Rules'
+import HomeButton from './Components/HomeButton/HomeButton'
+import Version from './Components/Version/Version'
+import NotFound from './Components/NotFound/NotFound'
 import { ROUTES } from './routes'
 
 export default function App() {

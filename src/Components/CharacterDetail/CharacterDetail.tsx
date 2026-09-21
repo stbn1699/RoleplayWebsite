@@ -1,60 +1,20 @@
-import { useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useCallback } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import './CharacterDetail.scss'
-import {useTranslation} from "react-i18next";
+import { useTranslation } from 'react-i18next'
 import { isCharacterName } from '../../characters'
-
-type Character = {
-    id: number
-    name: string
-    age: number
-}
+import { loadCharacters } from '../../services/dataService'
+import { useJsonResource } from '../../hooks/useJsonResource'
 
 export default function CharacterDetail() {
     const [searchParams] = useSearchParams()
-    const [character, setCharacter] = useState<Character | null>(null)
-    const [isLoading, setIsLoading] = useState(true)
-    const [hasError, setHasError] = useState(false)
     const { t } = useTranslation('translation', { keyPrefix: 'characterDetail' })
     const { t: translateStatus } = useTranslation('translation', { keyPrefix: 'status' })
 
     const characterName = searchParams.get('characterName')
-
-    useEffect(() => {
-        const controller = new AbortController()
-
-        setCharacter(null)
-        setIsLoading(true)
-        setHasError(false)
-
-        if (!isCharacterName(characterName)) {
-            setIsLoading(false)
-            return
-        }
-
-        fetch('/Data/Characters.json', {signal: controller.signal})
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`Unable to load character (${response.status})`)
-                }
-
-                return response.json()
-            })
-            .then((data: Character[]) => {
-                const foundCharacter = data.find(
-                    (item) => item.name === characterName
-                ) || null
-
-                setCharacter(foundCharacter)
-            })
-            .catch((error: unknown) => {
-                if (error instanceof DOMException && error.name === 'AbortError') return
-                setHasError(true)
-            })
-            .finally(() => setIsLoading(false))
-
-        return () => controller.abort()
-    }, [characterName])
+    const loadData = useCallback((signal: AbortSignal) => loadCharacters(signal), [])
+    const { data: characters, isLoading, hasError } = useJsonResource(loadData)
+    const character = characters?.find((item) => item.name === characterName) ?? null
 
     if (isLoading) {
         return <p className="pageStatus">{translateStatus('loading')}</p>
@@ -64,7 +24,7 @@ export default function CharacterDetail() {
         return <p className="pageStatus pageStatusError" role="alert">{translateStatus('error')}</p>
     }
 
-    if (!character) {
+    if (!isCharacterName(characterName) || !character) {
         return <p className="pageStatus">{translateStatus('notFound')}</p>
     }
 
@@ -79,6 +39,7 @@ export default function CharacterDetail() {
             />
 
             <h1 className="title">{t(`${character.name}.name`)}</h1>
+            <p className="age">{t('ageLabel')}: {character.age}</p>
             <p className="description">{t(`${character.name}.description`)}</p>
         </div>
     )

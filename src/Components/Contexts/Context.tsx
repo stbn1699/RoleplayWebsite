@@ -1,17 +1,10 @@
-import {useEffect, useState} from "react";
-import {useTranslation} from "react-i18next";
-import {useNavigate} from "react-router-dom";
+import { useCallback, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 import './Contexts.scss'
 import { ROUTES } from '../../routes'
-
-type Context = {
-    id: number
-    name: string
-    universe: string[]
-    nsfw: boolean
-    character: string[]
-    chatacterId?: number | number[]
-}
+import { loadContexts } from '../../services/dataService'
+import { useJsonResource } from '../../hooks/useJsonResource'
 
 function formatCharacterName(name: string) {
     return name.charAt(0).toUpperCase() + name.slice(1)
@@ -22,38 +15,14 @@ function getVisibleCharacters(characters: string[]) {
 }
 
 export default function Contexts() {
-    const [contexts, setContexts] = useState<Context[]>([])
-    const [isLoading, setIsLoading] = useState(true)
-    const [hasError, setHasError] = useState(false)
+    const loadData = useCallback((signal: AbortSignal) => loadContexts(signal), [])
+    const { data, isLoading, hasError } = useJsonResource(loadData)
+    const contexts = data ?? []
     const [openContextId, setOpenContextId] = useState<number | null>(null)
     const {t} = useTranslation('translation', {keyPrefix: 'contexts'})
     const {t: translateStatus} = useTranslation('translation', {keyPrefix: 'status'})
     const {t: translateCommon} = useTranslation('translation', {keyPrefix: 'common'})
     const navigate = useNavigate()
-
-    useEffect(() => {
-        const controller = new AbortController()
-
-        setIsLoading(true)
-        setHasError(false)
-
-        fetch('/Data/Contexts.json', {signal: controller.signal})
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`Unable to load contexts (${response.status})`)
-                }
-
-                return response.json()
-            })
-            .then((data: Context[]) => setContexts(data))
-            .catch((error: unknown) => {
-                if (error instanceof DOMException && error.name === 'AbortError') return
-                setHasError(true)
-            })
-            .finally(() => setIsLoading(false))
-
-        return () => controller.abort()
-    }, [])
 
     const handleToggle = (id: number) => {
         setOpenContextId((prev) => (prev === id ? null : id))

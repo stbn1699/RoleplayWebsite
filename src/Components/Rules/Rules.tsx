@@ -1,5 +1,5 @@
 import './Rules.scss'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
 const RULE_KEYS = ['respect', 'limits', 'noMen', 'noDm'] as const
 

@@ -61,15 +61,15 @@
 
 ### Architecture et types
 
-- [ ] Mutualiser le chargement de `Characters.json` et `Contexts.json`.
-- [ ] Créer des fonctions ou services typés pour le chargement et la validation des données.
-- [ ] Valider la structure des JSON au runtime au lieu de faire uniquement des casts TypeScript.
-- [ ] Créer des types partagés pour `Character`, `Context` et les langues.
-- [ ] Renommer `chatacterId` en `characterId`, ou supprimer cette propriété si elle est inutile.
-- [ ] Vérifier l'utilisation de `age`, actuellement présent dans les données mais non affiché.
-- [ ] Remplacer les chaînes dynamiques fragiles des traductions par des clés validées.
-- [ ] Uniformiser les conventions de code : guillemets, points-virgules, espaces et formatage.
-- [ ] Uniformiser les imports et éviter les imports React inutiles.
+- [x] Mutualiser le chargement de `Characters.json` et `Contexts.json`.
+- [x] Créer des fonctions ou services typés pour le chargement et la validation des données.
+- [x] Valider la structure des JSON au runtime au lieu de faire uniquement des casts TypeScript.
+- [x] Créer des types partagés pour `Character`, `Context` et les langues.
+- [x] Renommer `chatacterId` en `characterId`, ou supprimer cette propriété si elle est inutile.
+- [x] Vérifier l'utilisation de `age`, actuellement présent dans les données mais non affiché.
+- [x] Remplacer les chaînes dynamiques fragiles des traductions par des clés validées.
+- [x] Uniformiser les conventions de code : guillemets, points-virgules, espaces et formatage.
+- [x] Uniformiser les imports et éviter les imports React inutiles.
 
 ### Composants et logique
 

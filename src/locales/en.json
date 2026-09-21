@@ -41,6 +41,7 @@
     "openCharacter": "Open {{name}} profile"
   },
   "characterDetail": {
+    "ageLabel": "Age",
     "elina": {
       "name": "Elina",
       "age": "28",

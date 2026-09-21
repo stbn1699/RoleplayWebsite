@@ -1,7 +1,7 @@
-import { useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import './HomePage.scss'
-import Button from "../Button/Button";
+import Button from '../Button/Button'
 import { changeAppLanguage } from '../../i18n'
 import { ROUTES } from '../../routes'
 
