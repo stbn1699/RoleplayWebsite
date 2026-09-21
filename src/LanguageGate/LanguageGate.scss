@@ -10,8 +10,8 @@
 }
 
 .languageGate {
-	max-width: 1500px;
-	min-height: 90vh;
+	width:  min(1500px, 100%);
+	min-height: min(90vh, 900px);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -42,7 +42,7 @@
 
 	.flagIcon {
 		display: block;
-		width: 180px;
+		width: min(180px, 35vw);
 		height: auto;
 		object-fit: contain;
 	}
@@ -52,6 +52,29 @@
 		font-weight: 700;
 		text-align: center;
 		color: var(--text-color);
+	}
+}
+
+@media (max-width: 580px) {
+	.languageGateOverlay {
+		padding: 12px;
+	}
+
+	.languageGate {
+		min-height: 0;
+	}
+
+	.languageChoice {
+		gap: 12px;
+		padding: 24px 16px;
+
+		.flagIcon {
+			width: min(140px, 32vw);
+		}
+	}
+
+	.separator {
+		height: 3px;
 	}
 }
 

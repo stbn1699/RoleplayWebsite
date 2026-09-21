@@ -4,14 +4,14 @@
 
 ### Responsive
 
-- [ ] Remplacer les largeurs fixes de la grille des personnages (`200px`, `175px`, `150px`, `125px`) par une grille fluide avec `minmax()` et `auto-fit`/`auto-fill`.
-- [ ] Vérifier la grille sur toutes les largeurs intermédiaires afin d'éviter les débordements horizontaux.
-- [ ] Remplacer les tailles fixes importantes (`128px`, `45px`, `75px`, etc.) par des tailles fluides basées sur `clamp()`.
-- [ ] Autoriser le retour à la ligne dans les métadonnées des contextes au lieu d'utiliser `white-space: nowrap`.
-- [ ] Corriger l'animation des contenus de contexte : `max-height: 500px` coupe les descriptions longues.
+- [x] Remplacer les largeurs fixes de la grille des personnages (`200px`, `175px`, `150px`, `125px`) par une grille fluide avec `minmax()` et `auto-fit`/`auto-fill`.
+- [x] Vérifier la grille sur toutes les largeurs intermédiaires afin d'éviter les débordements horizontaux.
+- [x] Remplacer les tailles fixes importantes (`128px`, `45px`, `75px`, etc.) par des tailles fluides basées sur `clamp()`.
+- [x] Autoriser le retour à la ligne dans les métadonnées des contextes au lieu d'utiliser `white-space: nowrap`.
+- [x] Corriger l'animation des contenus de contexte : `max-height: 500px` coupe les descriptions longues.
 - [ ] Revoir le positionnement fixe des boutons thème/accueil afin qu'ils ne recouvrent pas les titres ou le contenu sur mobile.
-- [ ] Rendre la page de version utilisable sur mobile : `font-size: 300px` est trop grand.
-- [ ] Vérifier la fenêtre de choix de langue sur petits écrans et orientations portrait/paysage.
+- [x] Rendre la page de version utilisable sur mobile : `font-size: 300px` est trop grand.
+- [x] Vérifier la fenêtre de choix de langue sur petits écrans et orientations portrait/paysage.
 
 ### Accessibilité et HTML
 

@@ -4,7 +4,7 @@
 
 	.title {
 		text-align: center;
-		font-size:  128px;
+		font-size:  clamp(64px, 9vw, 128px);
 		margin:     0;
 
 		&::before {
@@ -111,7 +111,7 @@
 		}
 
 		.value {
-			white-space: nowrap;
+			white-space: normal;
 			text-align:  left;
 			font-weight: 400;
 		}
@@ -141,17 +141,19 @@
 	}
 
 	.contextContent {
-		max-height: 0;
+		display:     grid;
+		grid-template-rows: 0fr;
 		opacity:    0;
 		overflow:   hidden;
 		transform:  translateY(-8px);
-		transition: max-height 0.35s ease,
+		transition: grid-template-rows 0.35s ease,
 					opacity 0.24s ease,
 					transform 0.24s ease,
 					padding 0.35s ease;
 		padding:    0 36px;
 
 		p {
+			min-height: 0;
 			margin:      0;
 			font-size:   28px;
 			line-height: 1.5;
@@ -160,7 +162,7 @@
 		}
 
 		&.isVisible {
-			max-height: 500px;
+			grid-template-rows: 1fr;
 			opacity:    1;
 			transform:  translateY(0);
 			padding:    0 36px 32px;
