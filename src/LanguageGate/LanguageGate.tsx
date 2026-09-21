@@ -29,7 +29,12 @@ export default function LanguageGate() {
     if (!isOpen) return null
 
     return (
-        <div className="languageGateOverlay" role="dialog" aria-modal="true">
+        <div
+            className="languageGateOverlay"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Sélection de la langue"
+        >
             <div className="languageGate">
                 <button
                     type="button"
