@@ -6,6 +6,11 @@
 	border-radius: 20px;
 	border: var(--button-border-width) solid var(--button-border);
 
+	&:focus-visible {
+		outline:      3px solid var(--navlink-blue);
+		outline-offset: 4px;
+	}
+
 	@media (max-width: 480px) {
 		border-radius: 14px;
 	}

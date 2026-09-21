@@ -44,6 +44,11 @@
 		&:hover {
 			transform: translateY(-1px);
 		}
+
+		&:focus-visible {
+			outline:      3px solid var(--navlink-blue);
+			outline-offset: 4px;
+		}
 	}
 
 	.imageSwitchIcon {

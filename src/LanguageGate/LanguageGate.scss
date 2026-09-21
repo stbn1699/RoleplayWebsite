@@ -40,6 +40,11 @@
 		transform: scale(1.1);
 	}
 
+	&:focus-visible {
+		outline:      3px solid var(--navlink-blue);
+		outline-offset: -6px;
+	}
+
 	.flagIcon {
 		display: block;
 		width: min(180px, 35vw);

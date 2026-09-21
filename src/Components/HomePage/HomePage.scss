@@ -26,6 +26,11 @@
 			background: transparent;
 			cursor: pointer;
 
+			&:focus-visible {
+				outline:      3px solid var(--navlink-blue);
+				outline-offset: 4px;
+			}
+
 			img {
 				display: block;
 				width: 100px;
