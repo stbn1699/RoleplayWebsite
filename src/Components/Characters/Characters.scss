@@ -74,25 +74,40 @@
 		margin:                auto;
 
 		&.is-switching {
-			.characterImage {
+			.characterButton {
 				opacity:   0.45;
 				transform: scale(0.985);
 			}
 		}
 	}
 
-	.characterImage {
+	.characterButton {
 		width:         100%;
 		max-width:     200px;
 		justify-self:  center;
+		display:       block;
+		padding:       0;
+		border:        0;
+		background:    transparent;
+		cursor:        pointer;
+		border-radius: 15px;
+		transition:    opacity 0.28s ease,
+					   transform 0.28s ease,
+					   filter 0.28s ease;
+
+		&:focus-visible {
+			outline:      3px solid var(--navlink-blue);
+			outline-offset: 4px;
+		}
+	}
+
+	.characterImage {
+		width:         100%;
+		max-width:     200px;
 		object-fit:    cover;
 		display:       block;
 		border-radius: 15px;
 		border:        2px solid var(--default-border-color);
-		cursor:        pointer;
-		transition:    opacity 0.28s ease,
-					   transform 0.28s ease,
-					   filter 0.28s ease;
 	}
 
 	@media (max-width: 775px) {

@@ -65,13 +65,20 @@ export default function Characters() {
 
             <div className={`grid ${isAnimating ? 'is-switching' : ''}`}>
                 {characters.map((character) => (
-                    <img
+                    <button
                         key={character.id}
-                        className="characterImage"
-                        src={`/Images/${imageType}-${character.name}.png`}
-                        alt={character.name}
+                        type="button"
+                        className="characterButton"
                         onClick={() => handleCharacterClick(character.name)}
-                    />
+                        aria-label={`Ouvrir la fiche de ${character.name}`}
+                    >
+                        <img
+                            className="characterImage"
+                            src={`/Images/${imageType}-${character.name}.png`}
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    </button>
                 ))}
             </div>
         </div>
