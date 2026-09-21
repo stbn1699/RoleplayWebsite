@@ -12,6 +12,7 @@
 - [x] Revoir le positionnement fixe des boutons thème/accueil afin qu'ils ne recouvrent pas les titres ou le contenu sur mobile.
 - [x] Rendre la page de version utilisable sur mobile : `font-size: 300px` est trop grand.
 - [x] Vérifier la fenêtre de choix de langue sur petits écrans et orientations portrait/paysage.
+- [x] Modifier le bouton permettant d'afficher des photos plutôt que des icônes sur la page du personnage pour que l'utilisateur comprenne que c'est un bouton et pas juste une icône
 
 ### Accessibilité et HTML
 

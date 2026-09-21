@@ -50,11 +50,7 @@ export default function Characters() {
                     type="button"
                     className="imageSwitchButton"
                     onClick={toggleImageType}
-                    aria-label={
-                        imageType === 'thumbnail'
-                            ? 'Afficher les images face'
-                            : 'Afficher les images thumbnail'
-                    }>
+                    aria-label={t(imageType)}>
                         <span className="imageSwitchIcon"
                               style={{
                                   ['--toggle-icon-url' as string]:
@@ -63,6 +59,7 @@ export default function Characters() {
                                           : "url('/Thumbnail.svg')"
                               }}
                               aria-hidden="true"/>
+                        <span className="imageSwitchLabel">{t(imageType)}</span>
                 </button>
             </div>
 
