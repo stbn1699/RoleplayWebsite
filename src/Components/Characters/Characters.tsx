@@ -2,6 +2,7 @@ import {useEffect, useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import './Characters.scss'
+import { ROUTES } from '../../routes'
 
 type Character = {
     id: number
@@ -47,7 +48,7 @@ export default function Characters() {
     }, [])
 
     const handleCharacterClick = (characterName: string) => {
-        navigate(`/characterdetail?characterName=${encodeURIComponent(characterName)}`)
+        navigate(`${ROUTES.characterDetail}?characterName=${encodeURIComponent(characterName)}`)
     }
 
     const toggleImageType = () => {

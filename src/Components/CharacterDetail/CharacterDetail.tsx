@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import './CharacterDetail.scss'
 import {useTranslation} from "react-i18next";
+import { isCharacterName } from '../../characters'
 
 type Character = {
     id: number
@@ -25,6 +26,11 @@ export default function CharacterDetail() {
         setCharacter(null)
         setIsLoading(true)
         setHasError(false)
+
+        if (!isCharacterName(characterName)) {
+            setIsLoading(false)
+            return
+        }
 
         fetch('/Data/Characters.json', {signal: controller.signal})
             .then((response) => {
@@ -67,13 +73,13 @@ export default function CharacterDetail() {
             <div
                 className="backgroundIcon"
                 style={{
-                    ['--icon-url' as string]: `url('/Icons/icon-${characterName}.svg')`
+                    ['--icon-url' as string]: `url('/Icons/icon-${character.name}.svg')`
                 }}
                 aria-hidden="true"
             />
 
-            <h1 className="title">{t(`${characterName}.name`)}</h1>
-            <p className="description">{t(`${characterName}.description`)}</p>
+            <h1 className="title">{t(`${character.name}.name`)}</h1>
+            <p className="description">{t(`${character.name}.description`)}</p>
         </div>
     )
 }

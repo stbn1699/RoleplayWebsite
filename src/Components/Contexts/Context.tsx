@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 import {useNavigate} from "react-router-dom";
 import './Contexts.scss'
+import { ROUTES } from '../../routes'
 
 type Context = {
     id: number
@@ -59,7 +60,7 @@ export default function Contexts() {
     }
 
     const handleCharacterClick = (characterName: string) => {
-        navigate(`/characterdetail?characterName=${encodeURIComponent(characterName)}`)
+        navigate(`${ROUTES.characterDetail}?characterName=${encodeURIComponent(characterName)}`)
     }
 
     return (

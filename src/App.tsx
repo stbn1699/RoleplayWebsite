@@ -10,6 +10,7 @@ import Rules from "./Components/Rules/Rules";
 import HomeButton from "./Components/HomeButton/HomeButton";
 import Version from "./Components/Version/Version";
 import NotFound from "./Components/NotFound/NotFound";
+import { ROUTES } from './routes'
 
 export default function App() {
     return (
@@ -21,13 +22,13 @@ export default function App() {
             </div>
 
             <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/characters" element={<Characters />} />
-                <Route path="/characterdetail" element={<CharacterDetail />} />
-                <Route path="/contexts" element={<Contexts />} />
-                <Route path="/Infos" element={<Infos />} />
-                <Route path="/Rules" element={<Rules />} />
-                <Route path="/Version" element={<Version />} />
+                <Route path={ROUTES.home} element={<HomePage />} />
+                <Route path={ROUTES.characters} element={<Characters />} />
+                <Route path={ROUTES.characterDetail} element={<CharacterDetail />} />
+                <Route path={ROUTES.contexts} element={<Contexts />} />
+                <Route path={ROUTES.infos} element={<Infos />} />
+                <Route path={ROUTES.rules} element={<Rules />} />
+                <Route path={ROUTES.version} element={<Version />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </>

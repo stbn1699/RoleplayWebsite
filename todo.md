@@ -43,11 +43,11 @@
 
 ### Routes et navigation
 
-- [ ] Uniformiser les routes en minuscules : `/infos`, `/rules`, `/version`.
-- [ ] Vérifier que les liens et navigations utilisent exactement les mêmes chemins que les routes.
-- [ ] Ajouter une route pour les URLs inconnues.
-- [ ] Ajouter une gestion propre des paramètres invalides pour `characterName`.
-- [ ] Remplacer les traductions dynamiques non contrôlées par une validation explicite des noms de personnages.
+- [x] Uniformiser les routes en minuscules : `/infos`, `/rules`, `/version`.
+- [x] Vérifier que les liens et navigations utilisent exactement les mêmes chemins que les routes.
+- [x] Ajouter une route pour les URLs inconnues.
+- [x] Ajouter une gestion propre des paramètres invalides pour `characterName`.
+- [x] Remplacer les traductions dynamiques non contrôlées par une validation explicite des noms de personnages.
 
 ### Thème
 

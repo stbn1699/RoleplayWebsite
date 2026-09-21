@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import './HomePage.scss'
 import Button from "../Button/Button";
 import { changeAppLanguage } from '../../i18n'
+import { ROUTES } from '../../routes'
 
 export default function HomePage() {
     const navigate = useNavigate()
@@ -38,10 +39,10 @@ export default function HomePage() {
             </div>
 
             <div className="buttons">
-                <Button label={t('characters')} onClick={() => navigate('/characters')} />
-                <Button label={t('contexts')} onClick={() => navigate('/contexts')} />
-                <Button label={t('rules')} onClick={() => navigate('/rules')} />
-                <Button label={t('infos')} onClick={() => navigate('/infos')} />
+                <Button label={t('characters')} onClick={() => navigate(ROUTES.characters)} />
+                <Button label={t('contexts')} onClick={() => navigate(ROUTES.contexts)} />
+                <Button label={t('rules')} onClick={() => navigate(ROUTES.rules)} />
+                <Button label={t('infos')} onClick={() => navigate(ROUTES.infos)} />
             </div>
         </div>
     )
