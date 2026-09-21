@@ -20,23 +20,16 @@
 - [x] Ajouter des styles `:focus-visible` aux boutons de langue, boutons principaux et bouton de changement d'image.
 - [x] Éviter les liens `<a>` imbriqués dans le bouton d'ouverture d'un contexte.
 - [x] Ajouter un nom accessible au dialogue de sélection de langue.
-- [ ] Ajouter la gestion de la touche `Escape` pour le dialogue de langue.
-- [ ] Mettre en place une gestion correcte du focus dans le dialogue de langue.
-- [ ] Vérifier que toutes les zones tactiles font au moins environ `44px`.
-- [ ] Ajouter des textes `alt` descriptifs pour les images de personnages.
-- [ ] Utiliser `alt=""` pour les images purement décoratives.
-- [ ] Vérifier la hiérarchie des titres et l'impact des pseudo-éléments `~` sur les lecteurs d'écran.
-- [ ] Ajouter `prefers-reduced-motion` aux animations personnalisées, pas uniquement aux anciens styles CRA.
 
 ### Chargement et erreurs
 
-- [ ] Vérifier `response.ok` après chaque `fetch()`.
-- [ ] Ajouter un état de chargement pour les personnages, les détails et les contextes.
-- [ ] Ajouter un état d'erreur visible par l'utilisateur au lieu de seulement utiliser `console.error()`.
-- [ ] Distinguer les états `loading`, `error` et `not found` dans `CharacterDetail`.
-- [ ] Ajouter un `AbortController` aux requêtes annulables.
-- [ ] Ajouter un nettoyage des `setTimeout()` dans le changement d'image.
-- [ ] Ajouter une route 404 avec un message et un bouton de retour.
+- [x] Vérifier `response.ok` après chaque `fetch()`.
+- [x] Ajouter un état de chargement pour les personnages, les détails et les contextes.
+- [x] Ajouter un état d'erreur visible par l'utilisateur au lieu de seulement utiliser `console.error()`.
+- [x] Distinguer les états `loading`, `error` et `not found` dans `CharacterDetail`.
+- [x] Ajouter un `AbortController` aux requêtes annulables.
+- [x] Ajouter un nettoyage des `setTimeout()` dans le changement d'image.
+- [x] Ajouter une route 404 avec un message et un bouton de retour.
 
 ### Internationalisation
 

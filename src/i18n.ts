@@ -22,6 +22,13 @@ i18n
                         rules: 'Règles',
                         infos: 'Informations',
                     },
+                    status: {
+                        loading: 'Chargement…',
+                        error: 'Impossible de charger les données. Veuillez réessayer plus tard.',
+                        notFound: 'Personnage introuvable.',
+                        pageNotFound: 'Page introuvable',
+                        backHome: 'Retour à l’accueil',
+                    },
                     characters: {
                         title: 'Personnages',
                         thumbnail: 'afficher visages',
@@ -385,6 +392,13 @@ i18n
                         contexts: 'Contexts',
                         rules: 'Rules',
                         infos: 'Informations',
+                    },
+                    status: {
+                        loading: 'Loading…',
+                        error: 'Unable to load the data. Please try again later.',
+                        notFound: 'Character not found.',
+                        pageNotFound: 'Page not found',
+                        backHome: 'Back to home',
                     },
                     characters: {
                         title: 'Characters',

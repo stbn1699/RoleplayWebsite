@@ -12,13 +12,28 @@ type Character = {
 export default function CharacterDetail() {
     const [searchParams] = useSearchParams()
     const [character, setCharacter] = useState<Character | null>(null)
+    const [isLoading, setIsLoading] = useState(true)
+    const [hasError, setHasError] = useState(false)
     const { t } = useTranslation('translation', { keyPrefix: 'characterDetail' })
+    const { t: translateStatus } = useTranslation('translation', { keyPrefix: 'status' })
 
     const characterName = searchParams.get('characterName')
 
     useEffect(() => {
-        fetch('/Data/Characters.json')
-            .then((response) => response.json())
+        const controller = new AbortController()
+
+        setCharacter(null)
+        setIsLoading(true)
+        setHasError(false)
+
+        fetch('/Data/Characters.json', {signal: controller.signal})
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Unable to load character (${response.status})`)
+                }
+
+                return response.json()
+            })
             .then((data: Character[]) => {
                 const foundCharacter = data.find(
                     (item) => item.name === characterName
@@ -26,11 +41,25 @@ export default function CharacterDetail() {
 
                 setCharacter(foundCharacter)
             })
-            .catch((error) => console.error('Error loading character:', error))
+            .catch((error: unknown) => {
+                if (error instanceof DOMException && error.name === 'AbortError') return
+                setHasError(true)
+            })
+            .finally(() => setIsLoading(false))
+
+        return () => controller.abort()
     }, [characterName])
 
+    if (isLoading) {
+        return <p className="pageStatus">{translateStatus('loading')}</p>
+    }
+
+    if (hasError) {
+        return <p className="pageStatus pageStatusError" role="alert">{translateStatus('error')}</p>
+    }
+
     if (!character) {
-        return <div>Character not found</div>
+        return <p className="pageStatus">{translateStatus('notFound')}</p>
     }
 
     return (

@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import './Characters.scss'
@@ -14,15 +14,36 @@ type ImageType = 'thumbnail' | 'face'
 export default function Characters() {
     const navigate = useNavigate()
     const {t} = useTranslation('translation', {keyPrefix: 'characters'})
+    const {t: translateStatus} = useTranslation('translation', {keyPrefix: 'status'})
     const [characters, setCharacters] = useState<Character[]>([])
+    const [isLoading, setIsLoading] = useState(true)
+    const [hasError, setHasError] = useState(false)
     const [imageType, setImageType] = useState<ImageType>('thumbnail')
     const [isAnimating, setIsAnimating] = useState(false)
+    const animationTimeouts = useRef<ReturnType<typeof setTimeout>[]>([])
 
     useEffect(() => {
-        fetch('/Data/Characters.json')
-            .then((response) => response.json())
+        const controller = new AbortController()
+
+        setIsLoading(true)
+        setHasError(false)
+
+        fetch('/Data/Characters.json', {signal: controller.signal})
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Unable to load characters (${response.status})`)
+                }
+
+                return response.json()
+            })
             .then((data: Character[]) => setCharacters(data))
-            .catch((error) => console.error('Error loading characters:', error))
+            .catch((error: unknown) => {
+                if (error instanceof DOMException && error.name === 'AbortError') return
+                setHasError(true)
+            })
+            .finally(() => setIsLoading(false))
+
+        return () => controller.abort()
     }, [])
 
     const handleCharacterClick = (characterName: string) => {
@@ -30,16 +51,22 @@ export default function Characters() {
     }
 
     const toggleImageType = () => {
+        animationTimeouts.current.forEach(clearTimeout)
+        animationTimeouts.current = []
         setIsAnimating(true)
 
-        setTimeout(() => {
+        animationTimeouts.current.push(setTimeout(() => {
             setImageType((prev) => prev === 'thumbnail' ? 'face' : 'thumbnail')
-        }, 120)
+        }, 120))
 
-        setTimeout(() => {
+        animationTimeouts.current.push(setTimeout(() => {
             setIsAnimating(false)
-        }, 320)
+        }, 320))
     }
+
+    useEffect(() => () => {
+        animationTimeouts.current.forEach(clearTimeout)
+    }, [])
 
     return (
         <div className="Characters">
@@ -63,24 +90,30 @@ export default function Characters() {
                 </button>
             </div>
 
-            <div className={`grid ${isAnimating ? 'is-switching' : ''}`}>
-                {characters.map((character) => (
-                    <button
-                        key={character.id}
-                        type="button"
-                        className="characterButton"
-                        onClick={() => handleCharacterClick(character.name)}
-                        aria-label={`Ouvrir la fiche de ${character.name}`}
-                    >
-                        <img
-                            className="characterImage"
-                            src={`/Images/${imageType}-${character.name}.png`}
-                            alt=""
-                            aria-hidden="true"
-                        />
-                    </button>
-                ))}
-            </div>
+            {isLoading && <p className="pageStatus">{translateStatus('loading')}</p>}
+            {!isLoading && hasError && (
+                <p className="pageStatus pageStatusError" role="alert">{translateStatus('error')}</p>
+            )}
+            {!isLoading && !hasError && (
+                <div className={`grid ${isAnimating ? 'is-switching' : ''}`}>
+                    {characters.map((character) => (
+                        <button
+                            key={character.id}
+                            type="button"
+                            className="characterButton"
+                            onClick={() => handleCharacterClick(character.name)}
+                            aria-label={`Ouvrir la fiche de ${character.name}`}
+                        >
+                            <img
+                                className="characterImage"
+                                src={`/Images/${imageType}-${character.name}.png`}
+                                alt=""
+                                aria-hidden="true"
+                            />
+                        </button>
+                    ))}
+                </div>
+            )}
         </div>
     )
 }

@@ -9,6 +9,7 @@ import Infos from "./Components/Infos/Infos";
 import Rules from "./Components/Rules/Rules";
 import HomeButton from "./Components/HomeButton/HomeButton";
 import Version from "./Components/Version/Version";
+import NotFound from "./Components/NotFound/NotFound";
 
 export default function App() {
     return (
@@ -27,6 +28,7 @@ export default function App() {
                 <Route path="/Infos" element={<Infos />} />
                 <Route path="/Rules" element={<Rules />} />
                 <Route path="/Version" element={<Version />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </>
     )

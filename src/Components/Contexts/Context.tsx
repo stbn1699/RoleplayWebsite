@@ -22,15 +22,35 @@ function getVisibleCharacters(characters: string[]) {
 
 export default function Contexts() {
     const [contexts, setContexts] = useState<Context[]>([])
+    const [isLoading, setIsLoading] = useState(true)
+    const [hasError, setHasError] = useState(false)
     const [openContextId, setOpenContextId] = useState<number | null>(null)
     const {t} = useTranslation('translation', {keyPrefix: 'contexts'})
+    const {t: translateStatus} = useTranslation('translation', {keyPrefix: 'status'})
     const navigate = useNavigate()
 
     useEffect(() => {
-        fetch('/Data/Contexts.json')
-            .then((response) => response.json())
+        const controller = new AbortController()
+
+        setIsLoading(true)
+        setHasError(false)
+
+        fetch('/Data/Contexts.json', {signal: controller.signal})
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Unable to load contexts (${response.status})`)
+                }
+
+                return response.json()
+            })
             .then((data: Context[]) => setContexts(data))
-            .catch((error) => console.error('Error loading contexts:', error))
+            .catch((error: unknown) => {
+                if (error instanceof DOMException && error.name === 'AbortError') return
+                setHasError(true)
+            })
+            .finally(() => setIsLoading(false))
+
+        return () => controller.abort()
     }, [])
 
     const handleToggle = (id: number) => {
@@ -45,7 +65,11 @@ export default function Contexts() {
         <div className="Contexts">
             <h1 className="title">{t('title')}</h1>
 
-            <div className="contextsList">
+            {isLoading && <p className="pageStatus">{translateStatus('loading')}</p>}
+            {!isLoading && hasError && (
+                <p className="pageStatus pageStatusError" role="alert">{translateStatus('error')}</p>
+            )}
+            {!isLoading && !hasError && <div className="contextsList">
                 {contexts.map((context) => {
                     const isOpen = openContextId === context.id
                     const contentId = `context-content-${context.id}`
@@ -112,7 +136,7 @@ export default function Contexts() {
                         </article>
                     )
                 })}
-            </div>
+            </div>}
         </div>
     )
 }

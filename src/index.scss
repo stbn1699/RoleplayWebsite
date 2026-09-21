@@ -55,6 +55,39 @@ body {
 	height: 0;
 }
 
+.pageStatus,
+.pageStatusPage {
+	text-align: center;
+}
+
+.pageStatus {
+	margin: 40px auto;
+	padding: 0 20px;
+	font-size: clamp(24px, 4vw, 42px);
+}
+
+.pageStatusError {
+	color: #b42318;
+}
+
+.pageStatusPage {
+	padding: 80px 20px;
+}
+
+.pageStatusTitle {
+	font-size: clamp(48px, 8vw, 96px);
+}
+
+.pageStatusButton {
+	padding: 12px 20px;
+	border: var(--button-border-width) solid var(--button-border);
+	border-radius: 8px;
+	background: var(--button-background);
+	color: var(--button-text);
+	font: inherit;
+	cursor: pointer;
+}
+
 @media (max-width: 700px) {
 	.appControls {
 		display: flex;
