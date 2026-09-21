@@ -14,8 +14,10 @@ export default function App() {
     return (
         <>
             <LanguageGate />
-            <ThemeToggle />
-            <HomeButton />
+            <div className="appControls">
+                <HomeButton />
+                <ThemeToggle />
+            </div>
 
             <Routes>
                 <Route path="/" element={<HomePage />} />

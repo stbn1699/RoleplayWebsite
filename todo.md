@@ -9,7 +9,7 @@
 - [x] Remplacer les tailles fixes importantes (`128px`, `45px`, `75px`, etc.) par des tailles fluides basées sur `clamp()`.
 - [x] Autoriser le retour à la ligne dans les métadonnées des contextes au lieu d'utiliser `white-space: nowrap`.
 - [x] Corriger l'animation des contenus de contexte : `max-height: 500px` coupe les descriptions longues.
-- [ ] Revoir le positionnement fixe des boutons thème/accueil afin qu'ils ne recouvrent pas les titres ou le contenu sur mobile.
+- [x] Revoir le positionnement fixe des boutons thème/accueil afin qu'ils ne recouvrent pas les titres ou le contenu sur mobile.
 - [x] Rendre la page de version utilisable sur mobile : `font-size: 300px` est trop grand.
 - [x] Vérifier la fenêtre de choix de langue sur petits écrans et orientations portrait/paysage.
 
