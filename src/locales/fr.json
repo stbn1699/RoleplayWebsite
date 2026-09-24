@@ -1,259 +1,269 @@
 {
-  "common": {
-    "languageFrench": "Passer en français",
-    "languageEnglish": "Passer en anglais",
-    "backHome": "Revenir au menu principal",
-    "backHomeTitle": "Retour au menu",
-    "lightTheme": "Passer en thème clair",
-    "darkTheme": "Passer en thème sombre",
-    "sunIcon": "Icône soleil",
-    "moonIcon": "Icône lune",
-    "adultContent": "Contenu réservé aux adultes",
-    "frenchFlag": "Français",
-    "englishFlag": "Anglais",
-    "nsfwTitle": "Contenu réservé aux adultes"
-  },
-  "languageGate": {
-    "dialogLabel": "Sélection de la langue",
-    "frenchChoice": "Choisis ta langue !",
-    "englishChoice": "Choose your language!"
-  },
-  "homepage": {
-    "title": "Bienvenue",
-    "characters": "Personnages",
-    "contexts": "Contextes",
-    "rules": "Règles",
-    "infos": "Informations",
-    "openLanguageFrench": "Passer en français",
-    "openLanguageEnglish": "Passer en anglais"
-  },
-  "status": {
-    "loading": "Chargement…",
-    "error": "Impossible de charger les données. Veuillez réessayer plus tard.",
-    "notFound": "Personnage introuvable.",
-    "pageNotFound": "Page introuvable",
-    "backHome": "Retour à l’accueil"
-  },
-  "characters": {
-    "title": "Personnages",
-    "thumbnail": "afficher visages",
-    "face": "afficher miniatures",
-    "openCharacter": "Ouvrir la fiche de {{name}}"
-  },
-  "characterDetail": {
-    "ageLabel": "Âge",
-    "elina": {
-      "name": "Elina",
-      "age": "28",
-      "description": "Ancienne expatriée venue d’Estonie, Elina s’est imposée seule dans un monde qui ne lui faisait aucune place. Propriétaire d’un bar de luxe devenu incontournable, elle a su s’entourer des bonnes — ou mauvaises — personnes pour protéger ce qu’elle a construit. Entre élégance, contrôle et dangers invisibles, elle prépare désormais l’ouverture d’un casino, prête à étendre encore son influence.  \n\nUne fois installée, Elina n’a pas seulement pensé à elle : elle a tout fait pour rapatrier son frère Eliot et sa sœur Robin, restés en Estonie dans une situation précaire. Elle leur a financé un nouveau départ à ses côtés, offrant à Robin un garage auto où elle peut enfin vivre de sa mécanique, et à Eliot un salon de couture sur mesure à la sortie de la ville. Tous les trois forment désormais un noyau soudé, chacun avec son propre terrain de jeu, mais reliés par la même volonté de ne plus jamais retourner à la vie qu’ils ont laissée derrière eux.  \n\nPour protéger son établissement et sa famille, Elina a passé un accord avec la mafia russe locale, né d’une histoire plus personnelle qu’elle ne l’assume publiquement. Une des patronnes est devenue bien plus qu’une alliée, transformant un simple deal de protection en relation ambiguë, faite de loyauté, de tension et de sentiments qu’Elina ne pouvait plus totalement ignorer. La relation n’a pas duré, mais les conséquences, elles, sont restées : grâce à ce lien passé, son bar et son futur casino bénéficient d’une sécurité quasi intouchable… au prix d’une dette morale envers un monde dont on ne s’éloigne jamais vraiment."
-    },
-    "eliot": {
-      "name": "Eliot",
-      "age": "25",
-      "description": "Eliot vit entre deux mondes : celui du numérique et celui du textile. Hacker talentueu.x.se, iel navigue dans les systèmes avec la même précision qu’iel manie une aiguille. Couturier.e discret.e mais brillant.e, iel crée des pièces uniques, souvent pensées pour s’adapter aux besoins très particuliers de son entourage. Derrière son calme apparent se cache une intelligence redoutable, toujours en train d’observer, comprendre… et anticiper."
-    },
-    "robin": {
-      "name": "Robin",
-      "age": "21",
-      "description": "Passionnée de mécanique, Robin vit presque entièrement dans son hangar, entre moteurs démontés et voitures prêtes à rugir. Grâce à Elina, elle a son propre terrain, loin des regards, où elle prépare des véhicules pour les courses de rue sans jamais conduire elle-même. Brillante, brute et indépendante, elle préfère parler avec ses mains pleines de cambouis… mais certaines rencontres pourraient bien venir perturber son équilibre."
-    },
-    "finn": {
-      "name": "Finn",
-      "age": "24",
-      "description": "Mannequin britannique installé en ville, Finn Harrington alterne entre shootings pour Eliot et défilés pour diverses marques. Raffiné sans être prétentieux, il passe du costume parfaitement taillé au look décontracté avec une facilité désarmante. Mélomane, il vit entouré de playlists et de vinyles, mais garde une attitude légère et sans prise de tête. Côté caractère, Finn est posé, drôle sans forcer, un peu distrait parfois, mais toujours attentif aux gens qu’il aime — le genre de présence calme qui détend tout le monde autour de lui."
-    },
-    "lyra": {
-      "name": "Lyra",
-      "age": "18",
-      "description": "Lyra est une étudiante brillante dans une grande école de magie, connue pour ses résultats impeccables et sa maîtrise des sorts théoriques les plus complexes. Admirée pour son calme et son intelligence, elle reste pourtant assez solitaire, préférant les nuits blanches à la bibliothèque plutôt que les fêtes dans les salles communes.\n\nSon image de “génie détachée” intrigue autant qu’elle fascine : beaucoup la regardent de loin, peu osent vraiment l’approcher. Elle semble toujours fatiguée, toujours ailleurs, comme si elle portait un poids que personne ne voit vraiment."
-    },
-    "luiza": {
-      "name": "Luiza",
-      "age": "24",
-      "description": "Luiza est une chanteuse de Bossa Nova qui se produit dans des bars locaux et de petits clubs intimistes. Elle n’est pas vraiment connue du grand public, mais elle vit de sa musique, ce qui la rend profondément heureuse et fière de ce qu’elle construit.\n\nDouce et chaleureuse, elle prend le temps de parler avec les habitué·es après ses sets, toujours avec un sourire tranquille. Sa voix apaisante et son attitude gentille donnent aux soirées une atmosphère cosy, presque familière, où les gens reviennent plus pour elle que pour le lieu.\n\nEn dehors de la scène, elle mène une vie simple : répétitions, compositions, petits trajets entre chez elle et les bars où elle chante. Elle rêve parfois de scènes plus grandes, mais sans amertume ; pour l’instant, elle savoure chaque chanson comme si c’était déjà une forme de succès."
-    },
-    "cypher": {
-      "name": "Cypher",
-      "age": "26",
-      "description": "Cypher est la meilleure amie de Robin et sa pilote attitrée pour les courses clandestines. Elle vit dans une petite maison isolée, à l’écart de la ville, entourée de routes qu’elle connaît par cœur et de moteurs qu’elle pousse toujours un peu trop loin.\n\nElle s’est fait un nom dans le milieu des runs nocturnes : discrète, mais redoutée pour sa capacité à garder son calme à haute vitesse et à prendre des risques calculés que peu de pilotes osent tenter. Elle ne travaille pas avec tout le monde ; la plupart du temps, elle ne roule que pour Robin et quelques rares personnes qui ont gagné sa confiance.\n\nSon quotidien est rythmé par les préparations de courses, les réglages dans le garage de Robin, et des retours tardifs où l’adrénaline met du temps à retomber. Sa maison isolée est son refuge : un endroit où l’on ne vient pas par hasard, rempli de traces de vie nocturne (combinaisons, casques, cartes de routes, outils).\n\nSous son côté joueur et son sourire facile, elle reste très protectrice envers ceux qu’elle laisse entrer dans son cercle. Elle vit de ses courses clandestines, accepte les risques, mais se tient loin des organisations trop lourdes ; pour elle, la vitesse doit rester un choix, pas une obligation."
-    },
-    "thalia": {
-      "name": "Thalia",
-      "age": "29",
-      "description": "Thalia est, en apparence, une femme moderne qui vit près de la mer, connue pour son esprit affûté et son self-control presque intimidant. En réalité, elle est une fille cachée d’Athéna, née d’un fragment de la déesse incarné dans le monde mortel, et élevée loin de l’Olympe pour la protéger des rivalités divines.\n\nElle a hérité d’une intelligence stratégique exceptionnelle, d’un sens aigu de la justice et d’une capacité à garder la tête froide dans n’importe quelle situation. Son corps, marqué par des tatouages aux motifs presque ritualisés, est autant une armure qu’un rappel de ses origines mythologiques.\n\nThalia mène une double vie : officiellement, elle travaille comme consultante en “gestion de crise” et en préparation mentale, aidant des personnes influentes à reprendre le contrôle de leur existence. Officieusement, elle sert parfois d’intermédiaire entre le monde des mortels et celui des dieux, lorsque certains anciens conflits ressurgissent sous des formes très contemporaines.\n\nSon lien avec Athéna est discret, presque secret : quelques rêves récurrents, la sensation d’une présence lors de décisions cruciales, et une série de signes impossibles à ignorer. Elle ne se présente jamais comme une demi-déesse ; elle préfère être vue comme une femme qui sait exactement ce qu’elle fait… même quand le destin essaie de la pousser dans une direction précise."
-    },
-    "iris": {
-      "name": "Iris",
-      "age": "30",
-      "description": "Iris est photographe et coloriste pour le cinéma indépendant, spécialisée dans les lumières douces et les ambiances intimes. Elle vit seule dans un petit appartement où elle se prend souvent en photo dans les rais de lumière comme on tiendrait un journal, pour garder une trace de sa reconstruction après un gros burn-out.\n\nHypersensible et très observatrice, elle parle peu d’elle-même mais capte les autres avec une justesse presque troublante. Elle choisit désormais soigneusement ses projets, fuyant les tournages trop bruyants pour se concentrer sur les histoires humaines, lentes, qui lui permettent de reprendre confiance en elle et en ce qu’elle ressent."
-    },
-    "alix": {
-      "name": "Alix",
-      "age": "22",
-      "description": "Alix est étudiante en hôtellerie, partagée entre ses cours, ses projets de fin d’année et son travail de serveuse dans un restaurant où les horaires changent tout le temps. Elle aime le monde de l’hôtellerie, l’organisation d’une salle, le soin apporté aux détails et l’idée de pouvoir un jour gérer son propre établissement. Pour l’instant, elle enchaîne les shifts, compte ses heures pour réussir à boucler ses fins de mois et calcule chaque dépense pour ne pas se retrouver dans le rouge.\n\nAu fil des services, Alix a développé une grande résistance, mais la fatigue émotionnelle commence à peser. Les clients mécontents, aigri·es, ceux qui parlent mal au personnel ou la traitent comme si elle n’existait pas, lui donnent parfois envie de tout arrêter. Elle garde le sourire et reste professionnelle, mais rentre souvent chez elle vidée, avec la sensation de ne jamais être vraiment reconnue pour son travail. Elle se promet qu’un jour, si elle ouvre son propre endroit, ce sera un lieu où le personnel sera respecté autant que les client·es, et où elle pourra enfin exercer son métier sans avoir à encaisser la colère des autres."
-    },
-    "cecily": {
-      "name": "Cecily",
-      "age": "19",
-      "description": "Cecily est une princesse joyeuse d’un petit royaume communiste, où la couronne n’est pas un symbole de pouvoir absolu mais de représentation du peuple. Elle a grandi au milieu des jardins du palais, entourée de fleurs et d’animaux, habituée à passer autant de temps avec les jardiniers, les institutrices et les enfants du pays qu’en robe de cérémonie. Curieuse et enthousiaste, elle se faufile souvent hors des protocoles pour assister à des fêtes populaires, des assemblées, ou simplement pour discuter avec celles et ceux qui font tourner le royaume au quotidien.\n\nSon rôle officiel est surtout diplomatique et culturel : Cecily représente le visage doux et chaleureux du régime, organise des festivals, visite les écoles et participe à la mise en valeur de l’art, des bibliothèques et des espaces verts. On la connaît pour ses discours naïvement idéalistes mais sincères, son rire facile et sa capacité à écouter les histoires des autres comme si elles étaient aussi importantes que les grandes décisions politiques. Sous ses airs de princesse de conte, elle porte pourtant une vraie conviction : celle que l’égalité ne doit jamais écraser la beauté, et que la joie peut elle aussi être une forme de résistance."
-    },
-    "inessa": {
-      "name": "Inessa",
-      "age": "23",
-      "description": "Inessa vient de Russie et travaille comme photographe, toujours entre deux voyages et trois couchers de soleil à capturer. Elle a commencé avec un vieux appareil hérité de son grand-père et n’a jamais vraiment arrêté depuis, développant une obsession douce pour les lumières naturelles, les champs, les villes au bord de l’eau et les visages qui rient sans se rendre compte qu’on les prend en photo.\n\nInstallée loin de chez elle, elle mélange nostalgie et curiosité : ses images portent souvent une touche de mélancolie russe et de couleurs chaudes, comme si elle essayait de tenir ensemble plusieurs pays à la fois. Inessa vit de petits contrats, de séances improvisées et parfois de collaborations avec d’autres artistes, mais ce qu’elle préfère, ce sont les moments où elle peut juste se perdre avec son appareil, sans objectif précis, en laissant les rencontres et les paysages décider eux-mêmes de ce qu’elle va garder."
-    },
-    "rae": {
-      "name": "Rae",
-      "age": "27",
-      "description": "Rae est une influenceuse “soft chaos” qui mélange selfies bruts, lingerie, tattoos et petits bouts de quotidien dans son appartement minimaliste. Elle ne se présente pas comme modèle pro, mais comme une fille qui documente son corps, ses humeurs et sa façon de se réapproprier son image, entre miroirs, lumière naturelle et stories à moitié improvisées.\n\nSon univers tourne autour du body positive, du make-up qui met en valeur ses traits sans les lisser, et de discussions honnêtes avec sa communauté sur la confiance en soi, les relations, et la sexualité assumée sans être performée. Rae vit de partenariats triés sur le volet (lingerie, maquillage, bijoux, déco), de contenus exclusifs et de collaborations photo avec d’autres artistes, mais ce qui la distingue, c’est sa manière de rester accessible : on a l’impression d’être dans sa chambre avec elle plutôt que devant une vitrine parfaite."
-    }
-  },
-  "contexts": {
-    "title": "Contextes",
-    "universe": "Univers :",
-    "character": "Personnage :",
-    "adultContent": "Contenu réservé aux adultes",
-    "intrusion": {
-      "name": "Intrusion",
-      "content": "Vers 2h du matin, après la fermeture progressive du bar, Elina remonte à son penthouse situé au dernier étage. En entrant, elle remarque immédiatement un détail inhabituel : une lumière est allumée dans le salon, alors qu’elle est certaine de l’avoir éteinte en partant.\n\nLa sécurité n’a signalé aucune intrusion. Les caméras n’ont rien relevé d’anormal.\n\nEn avançant, elle te découvre... installée chez elle, parfaitement calme, comme si elle était à sa place."
-    },
-    "privateParty": {
-      "name": "Soirée Privée",
-      "content": "Lors d’une soirée privée organisée dans le sous-sol du bar, Elina supervise les premières tables de jeu encore en test.\n\nL’ambiance est feutrée, réservée à une poignée de clients triés sur le volet. Rapidement, tu attire son attention : tu enchaîne les victoires avec une aisance déconcertante, sans qu’aucune triche ne soit détectée.\n\nPlutôt que de faire intervenir qui que ce soit, Elina décide de la faire venir dans un salon privé pour comprendre qui elle est… et comment elle joue."
-    },
-    "regularClient": {
-      "name": "Client Régulier",
-      "content": "Depuis plusieurs semaines, tu revient presque tous les soirs au bar d’Elina. Toujours à la même place, toujours seule, toujours sobre. Tu ne crée aucun problème, paie sans discuter… mais observe beaucoup trop pour être une simple cliente.\n\nL’équipe de sécurité t’a déjà remarquée, sans trouver de raison valable de l’intercepter. Tu ne fait rien de répréhensible, mais sa présence devient difficile à ignorer.\n\nCe soir-là, encore une fois, tu est là. Assise, regard posé quelque part entre la scène et le bar… ou peut-être directement sur Elina."
-    },
-    "inhabitualClient": {
-      "name": "Client Inhabituel",
-      "content": "Eliot reçoit une commande inhabituelle : aucune rencontre, aucune prise de mesures classique, seulement un dossier extrêmement précis envoyé de manière anonyme. Les mensurations sont parfaites, les détails pointus, et le paiement a déjà été effectué… en avance, via un circuit difficile à tracer.\n\nLe vêtement demandé est d’un niveau exceptionnel, presque trop spécifique pour quelqu’un qui n’aurait jamais rencontré Eliot.\n\nLe jour de la récupération approche… mais Eliot n’a toujours aucune idée de qui se cache derrière cette commande."
-    },
-    "ambiguousFittings": {
-      "name": "Essayages Ambigus",
-      "content": "Une cliente fortunée réserve un créneau en dehors des horaires habituels pour un essayage entièrement privé.\n\nLa demande est claire : aucune équipe autour, aucune interruption, juste elle et Eliot dans l’atelier.\n\nCe genre de requête n’est pas inhabituel dans le milieu… mais quelque chose dans son attitude tranche avec ses clientes habituelles. Elle semble moins intéressée par la tenue que par Eliot lui-même, observant chacun de ses gestes, posant des questions plus personnelles que professionnelles.\n\nL’essayage se prolonge, bien au-delà de ce qui était prévu."
-    },
-    "unexpectedHacking": {
-      "name": "Hacking Inattendu",
-      "content": "En travaillant tard dans son atelier, Eliot détecte une intrusion dans son propre système informatique.\n\nQuelqu’un a réussi à franchir ses sécurités… sans rien voler, sans rien modifier. Juste entrer, puis rester.\n\nEn retraçant la source, il remonte jusqu’à une présence active, comme si la personne attendait qu’il la remarque.\n\nQuelques minutes plus tard, une femme apparaît devant la boutique, comme si tout était parfaitement synchronisé."
-    },
-    "carNotBroken": {
-      "name": "Voiture non Cassée",
-      "content": "Robin voit passer beaucoup de monde pour des réparations, mais une femme commence à revenir souvent… pour des problèmes mineurs, voire inexistants. \n\nElle traîne, pose des questions, observe Robin travailler avec un intérêt qui dépasse largement la mécanique.\n\nRobin comprend vite que la voiture n’est qu’un prétexte, mais reste à savoir pourquoi : fascination, attirance… ou autre chose de moins innocent."
-    },
-    "technicalTalk": {
-      "name": "Conversation Technique",
-      "content": "Robin est présente sur les événements de courses de rue, mais toujours en retrait, concentrée sur ses voitures et les performances des pilotes qui les conduisent.\n\nUne femme s’intéresse particulièrement à son travail, restant près des stands, posant des questions précises… parfois trop.\n\nEntre discussions techniques, regards qui s’attardent et tension qui monte doucement, Robin se demande si cette femme est juste passionnée… ou si elle cherche aussi à se rapprocher d’elle."
-    },
-    "dangerousWomen": {
-      "name": "Femme Dangereuse",
-      "content": "Une femme liée à un réseau plus dangereux que les simples courses de rue commence à fréquenter le hangar. Elle propose des contrats, des voitures, de l’argent… mais tout ça a un prix.\n\nRobin sent que ça peut la faire monter très vite… mais aussi la faire tomber. Au milieu de ça, une relation se développe, entre méfiance, désir et risques constants."
-    },
-    "newCollection": {
-      "name": "Nouvelle Collection",
-      "content": "Eliot organise un shooting pour tester une nouvelle collection, et Finn pose comme modèle principal, dans un lieu qui colle à leur esthétique (rue élégante, toit, vieux théâtre, studio minimaliste). Tu es présent·e sur le shooting en tant que photographe, maquilleuse, styliste, assistant·e ou autre rôle lié à la création.\n\nAu fil des prises, Finn garde son attitude détendue, parle musique, plaisante, tandis qu’Eliot reste concentrée sur les vêtements et les détails. La journée de travail laisse la place à des échanges plus personnels, entre inspiration visuelle et affinités musicales."
-    },
-    "musicAndFood": {
-      "name": "Musique et Nourriture",
-      "content": "Après une journée de travail, Finn se rend a un repas-concert intimiste d’un artiste qu’il aime, dans une petite salle / restaurant plutôt raffiné. Tu y étais, et la soirée se déroule dans une atmosphère douce, centrée sur les instruments, les voix et l’émotion de la musique en live.\n\nAprès cette soirée, vous vous retrouvez a ma même table, vous parlez de vos groupes préférés, de souvenirs de concerts, de playlists que vous vous partagez. Le moment marque une bascule entre simple connaissance et véritable complicité, portée par la musique plutôt que par le travail."
-    },
-    "fashionShow": {
-      "name": "Défilé de Mode",
-      "content": "Vous êtes tous les deux sur le même défilé, affectés à une série de silhouettes proches dans l’ordre de passage. En backstage, vous partagez le même portant, les mêmes retouches de dernière minute, les mêmes instructions qu’on répète en boucle. \n\nEntre stress léger, maquillage et essayages, vous commencez à échanger quelques mots, des regards, ensemble sur un passage en duo. Cette proximité répétée, entre coulisses et lumière, crée un lien naturel : vous vous retrouvez à la fin du show, encore en demi-costume, à parler de la soirée et de la sensation étrange mais agréable d’avoir partagé la scène."
-    },
-    "strangeNewWork": {
-      "name": "Étrange Nouveau Travail",
-      "content": "On se connaît à peine, mais je cerche du travail. Je propose de t’aider dans ton quotidien (ménage, organisation, tâches diverses).\n\nEn échange, tu installes un cadre strict : règles, posture, manière de parler.\n\nCe qui commence comme un arrangement pratique devient une dynamique de contrôle assumée, où je prends plaisir à être guidée, corrigée, et utilisée dans un cadre consenti.\n\nLe lien évolue entre discipline, dépendance et attachement."
-    },
-    "kinkyMeeting": {
-      "name": "Rencontre Kinky",
-      "content": "On se rencontre via un milieu kink, et j’exprime clairement mon envie d’être soumise, encadrée et “dressée”.\n\nTu prends ce rôle au sérieux : mise en place de routines, apprentissage du pet play, utilisation de tenues (latex, bitchsuit), exercices de comportement.\n\nLa relation tourne autour du dressage, du contrôle et de la progression, avec une montée en intensité dans la confiance et l’abandon."
-    },
-    "collocation": {
-      "name": "Collocation",
-      "content": "On est colocataires, et au début j’aide juste un peu plus que prévu dans l’appartement. Petit à petit, je prends l’habitude de m’occuper de tout : ménage, lessive, courses… et surtout de toi.\n\nAvec le temps, la dynamique change. Je cherche ton approbation, attends tes ordres, et finis par adopter une place plus basse, presque comme un animal de compagnie.\n\nOn met en place des règles, des limites… et un jeu de domination où je deviens progressivement la chienne de la maison."
-    },
-    "returnedProtection": {
-      "name": "Protection Retournée",
-      "content": "Je suis engagée pour te protéger, mais au fil du temps, mon rôle dépasse largement la sécurité. Je suis toujours là, toujours disponible, toujours attentive à tes besoins.\n\nLa relation glisse vers quelque chose de plus possessif et asymétrique, où je deviens une protectrice dévouée… mais aussi une soumise qui vit pour servir.\n\nOn construit une dynamique où utilité, loyauté et désir s’entremêlent."
-    },
-    "relationshipEvolution": {
-      "name": "Évolution de Relation",
-      "content": "On est en couple, et après discussion, je décide de m’abandonner à une dynamique de domination totale dans le cadre privé.\n\nDes règles sont mises en place : tenue, comportement, accès à mon corps, moments dédiés où je n’ai plus à décider mais simplement à suivre.\n\nLe quotidien devient un terrain de jeu structuré, entre contrôle, rituels et abandon consenti."
-    },
-    "privateCircle": {
-      "name": "Cercle Privé",
-      "content": "Je suis entrée dans un cercle magique privé, où certaines sorcières pratiquent des formes de magie avancées basées sur le contrôle et la discipline du corps. J’y deviens ton apprentie, acceptant de me soumettre à tes rituels.\n\nEntre enchantements de contrainte, accessoires enchantés (liens magiques, tenues vivantes comme du latex enchanté), et règles strictes, mon corps et mes réactions deviennent partie intégrante de l’apprentissage.\n\nLa relation évolue entre enseignement, domination et abandon, dans un cadre de plus en plus exigeant."
-    },
-    "enchantedClothes": {
-      "name": "Vêtements Enchantés",
-      "content": "Je pousse la porte d’une boutique discrète du Chemin de Traverse, spécialisée dans des vêtements enchantés très particuliers. La propriétaire crée des pièces uniques qui réagissent au corps, à la magie… et à l’autorité de celle qui les contrôle.\n\nEn essayant certaines créations (bitchsuit enchantée, latex vivant, colliers magiques), je découvre que ces objets ne sont pas seulement esthétiques, mais faits pour imposer des postures, des comportements, et amplifier une dynamique de soumission.\n\nTrès vite, je reviens… moins pour les vêtements, et plus pour celle qui les contrôle."
-    },
-    "magicPact": {
-      "name": "Pacte Magique",
-      "content": "Je conclus un pacte magique volontaire avec une sorcière puissante, un serment ancien qui lie ma magie et mon corps à elle dans certaines conditions.\n\nCe lien crée une connexion constante : sensations amplifiées, besoin de proximité, incapacité à ignorer ses ordres dans le cadre défini du rituel.\n\nEntre dépendance magique, rituels réguliers et exploration de limites toujours repoussées, la relation devient aussi intense que dangereusement addictive — tout en restant basée sur des règles claires établies dès le départ."
-    },
-    "strangeCopilot": {
-      "name": "Étrange Copilote",
-      "content": "J’ai été réduite à l’état de “propriété” dans des circuits illégaux, jusqu’à ce que tu me rachètes lors d’une transaction. Contrairement aux autres, tu ne m’utilises pas comme un objet : tu me proposes un contrat clair.\n\nJe reste à tes côtés, je t’appartiens dans un cadre défini… mais en échange, j’ai une place, une fonction. Rapidement, tu découvres mes connaissances sur les routes, les espèces et les vaisseaux.\n\nJe deviens indispensable à tes missions… et volontairement soumise à toi, autant dans le cockpit que dans l’intimité."
-    },
-    "ClandestineSexShop": {
-      "name": "Sex-Shop Clandestin",
-      "content": "Je travaille dans un sexshop clandestin des bas-fonds de Coruscant, un endroit réservé à une clientèle riche et discrète. \n\nOfficiellement vendeuse, je suis surtout “mise à disposition” pour tester, présenter et porter certains produits très spécifiques.\n\nQuand tu entres dans la boutique, tu comprends vite que je ne suis pas une simple employée. Entre objets technologiques, accessoires sci-fi et regards insistants, une dynamique s’installe.\n\nJe pourrais rester un simple produit du lieu… ou devenir quelque chose de bien plus personnel pour toi."
-    },
-    "sandServant": {
-      "name": "Servante de Sable",
-      "content": "Je vis comme servante dans une demeure isolée sur Tatooine, habituée à obéir, à anticiper, à me faire discrète. Mon quotidien est rythmé par les ordres, la chaleur écrasante et l’absence de liberté.\n\nTon arrivée change l’équilibre. Tu n’as pas la même manière de me regarder, ni les mêmes attentes.\n\nEntre habitudes ancrées et nouvelles possibilités, une relation se construit, entre contrôle, curiosité et évolution du lien."
-    },
-    "shipRepair": {
-      "name": "Réparation de Vaisseaux",
-      "content": "On se rencontre dans un hangar sur une planète périphérique, toutes les deux occupées à réparer des vaisseaux dans des conditions précaires.\n\nTrès vite, une complicité naît entre nous : échanges de techniques, entraide, longues nuits à bricoler côte à côte.\n\nCe qui commence comme une collaboration devient une relation plus personnelle, faite de tension, de proximité et d’un attachement qui se construit sans rapport de domination."
-    },
-    "bountyHunters": {
-      "name": "Chasseuses de Primes",
-      "content": "On est toutes les deux chasseuses de primes, souvent en compétition sur les mêmes contrats. Chaque rencontre est un mélange de rivalité et d’attirance.\n\nOn se croise, on se gêne, parfois on s’allie temporairement… sans jamais vraiment se faire confiance.\n\nEntre affrontements, négociations tendues et moments de répit inattendus, la relation oscille entre ennemies et quelque chose de beaucoup plus ambigu."
-    }
-  },
-  "infos": {
-    "title": "Infos",
-    "whoAmI": {
-      "title": "Qui suis-je ?",
-      "content": "Salut salut ! C’est Elyna :)\n\nJe vais parler un peu de moi sur cette page pour celleux qui veulent des informations ^^\n\nEn ce qui me concerne, je suis une roleplayeuse de 23 ans, française (69) et transgenre. Je parle anglais assez couramment, donc je suis parfaitement capable de rp en anglais !"
-    },
-    "website": {
-      "title": "Le site",
-      "content": "Le site sur lequel tu es actuellement a été entièrement codé par mes soins. Le projet est open source sur GitHub — demande-moi sur Insta, je t’enverrai le lien avec plaisir pour en discuter !"
-    },
-    "findMe": {
-      "title": "Me retrouver",
-      "content": "Il y a plusieurs moyens de me retrouver !"
-    },
-    "links": {
-      "roleplayInstagram": "Instagram roleplay",
-      "personalInstagram": "Instagram perso",
-      "personalDiscord": "Discord perso"
-    }
-  },
-  "rules": {
-    "title": "Règlement",
-    "intro": "Quelques règles simples mais non négociables, pour que cet espace reste sain pour tout le monde.",
-    "list": {
-      "respect": {
-        "title": "Respect avant tout",
-        "content": "Le racisme, l’homophobie et la transphobie sont strictement interdits ici. Zéro tolérance, sans exception."
-      },
-      "limits": {
-        "title": "Les limites sont sacrées",
-        "content": "Même dans les contextes soumis/dominants, les limites établies restent infranchissables. Le consentement prime toujours, peu importe le rôle joué."
-      },
-      "noMen": {
-        "title": "Espace réservé",
-        "content": "Cet espace n’est pas ouvert aux hommes. Aucune exception, aucune négociation possible."
-      },
-      "noDm": {
-        "title": "Pas de réponse aux MP",
-        "content": "Je ne réponds pas aux demandes de message privé non sollicitées. Merci de respecter ce choix."
-      }
-    }
-  }
+	"common": {
+		"languageFrench": "Passer en français",
+		"languageEnglish": "Passer en anglais",
+		"backHome": "Revenir au menu principal",
+		"backHomeTitle": "Retour au menu",
+		"lightTheme": "Passer en thème clair",
+		"darkTheme": "Passer en thème sombre",
+		"sunIcon": "Icône soleil",
+		"moonIcon": "Icône lune",
+		"adultContent": "Contenu réservé aux adultes",
+		"frenchFlag": "Français",
+		"englishFlag": "Anglais",
+		"nsfwTitle": "Contenu réservé aux adultes"
+	},
+	"languageGate": {
+		"dialogLabel": "Sélection de la langue",
+		"frenchChoice": "Choisis ta langue !",
+		"englishChoice": "Choose your language!"
+	},
+	"homepage": {
+		"title": "Bienvenue",
+		"characters": "Personnages",
+		"contexts": "Contextes",
+		"rules": "Règles",
+		"infos": "Informations",
+		"openLanguageFrench": "Passer en français",
+		"openLanguageEnglish": "Passer en anglais"
+	},
+	"status": {
+		"loading": "Chargement…",
+		"error": "Impossible de charger les données. Veuillez réessayer plus tard.",
+		"notFound": "Personnage introuvable.",
+		"pageNotFound": "Page introuvable",
+		"backHome": "Retour à l’accueil"
+	},
+	"characters": {
+		"title": "Personnages",
+		"thumbnail": "afficher visages",
+		"face": "afficher miniatures",
+		"openCharacter": "Ouvrir la fiche de {{name}}"
+	},
+	"characterDetail": {
+		"ageLabel": "Âge",
+		"elina": {
+			"name": "Elina",
+			"age": "28",
+			"description": "Ancienne expatriée venue d’Estonie, Elina s’est imposée seule dans un monde qui ne lui faisait aucune place. Propriétaire d’un bar de luxe devenu incontournable, elle a su s’entourer des bonnes — ou mauvaises — personnes pour protéger ce qu’elle a construit. Entre élégance, contrôle et dangers invisibles, elle prépare désormais l’ouverture d’un casino, prête à étendre encore son influence.  \n\nUne fois installée, Elina n’a pas seulement pensé à elle : elle a tout fait pour rapatrier son frère Eliot et sa sœur Robin, restés en Estonie dans une situation précaire. Elle leur a financé un nouveau départ à ses côtés, offrant à Robin un garage auto où elle peut enfin vivre de sa mécanique, et à Eliot un salon de couture sur mesure à la sortie de la ville. Tous les trois forment désormais un noyau soudé, chacun avec son propre terrain de jeu, mais reliés par la même volonté de ne plus jamais retourner à la vie qu’ils ont laissée derrière eux.  \n\nPour protéger son établissement et sa famille, Elina a passé un accord avec la mafia russe locale, né d’une histoire plus personnelle qu’elle ne l’assume publiquement. Une des patronnes est devenue bien plus qu’une alliée, transformant un simple deal de protection en relation ambiguë, faite de loyauté, de tension et de sentiments qu’Elina ne pouvait plus totalement ignorer. La relation n’a pas duré, mais les conséquences, elles, sont restées : grâce à ce lien passé, son bar et son futur casino bénéficient d’une sécurité quasi intouchable… au prix d’une dette morale envers un monde dont on ne s’éloigne jamais vraiment."
+		},
+		"eliot": {
+			"name": "Eliot",
+			"age": "25",
+			"description": "Eliot vit entre deux mondes : celui du numérique et celui du textile. Hacker talentueu.x.se, iel navigue dans les systèmes avec la même précision qu’iel manie une aiguille. Couturier.e discret.e mais brillant.e, iel crée des pièces uniques, souvent pensées pour s’adapter aux besoins très particuliers de son entourage. Derrière son calme apparent se cache une intelligence redoutable, toujours en train d’observer, comprendre… et anticiper."
+		},
+		"robin": {
+			"name": "Robin",
+			"age": "21",
+			"description": "Passionnée de mécanique, Robin vit presque entièrement dans son hangar, entre moteurs démontés et voitures prêtes à rugir. Grâce à Elina, elle a son propre terrain, loin des regards, où elle prépare des véhicules pour les courses de rue sans jamais conduire elle-même. Brillante, brute et indépendante, elle préfère parler avec ses mains pleines de cambouis… mais certaines rencontres pourraient bien venir perturber son équilibre."
+		},
+		"finn": {
+			"name": "Finn",
+			"age": "24",
+			"description": "Mannequin britannique installé en ville, Finn Harrington alterne entre shootings pour Eliot et défilés pour diverses marques. Raffiné sans être prétentieux, il passe du costume parfaitement taillé au look décontracté avec une facilité désarmante. Mélomane, il vit entouré de playlists et de vinyles, mais garde une attitude légère et sans prise de tête. Côté caractère, Finn est posé, drôle sans forcer, un peu distrait parfois, mais toujours attentif aux gens qu’il aime — le genre de présence calme qui détend tout le monde autour de lui."
+		},
+		"lyra": {
+			"name": "Lyra",
+			"age": "18",
+			"description": "Lyra est une étudiante brillante dans une grande école de magie, connue pour ses résultats impeccables et sa maîtrise des sorts théoriques les plus complexes. Admirée pour son calme et son intelligence, elle reste pourtant assez solitaire, préférant les nuits blanches à la bibliothèque plutôt que les fêtes dans les salles communes.\n\nSon image de “génie détachée” intrigue autant qu’elle fascine : beaucoup la regardent de loin, peu osent vraiment l’approcher. Elle semble toujours fatiguée, toujours ailleurs, comme si elle portait un poids que personne ne voit vraiment."
+		},
+		"luiza": {
+			"name": "Luiza",
+			"age": "24",
+			"description": "Luiza est une chanteuse de Bossa Nova qui se produit dans des bars locaux et de petits clubs intimistes. Elle n’est pas vraiment connue du grand public, mais elle vit de sa musique, ce qui la rend profondément heureuse et fière de ce qu’elle construit.\n\nDouce et chaleureuse, elle prend le temps de parler avec les habitué·es après ses sets, toujours avec un sourire tranquille. Sa voix apaisante et son attitude gentille donnent aux soirées une atmosphère cosy, presque familière, où les gens reviennent plus pour elle que pour le lieu.\n\nEn dehors de la scène, elle mène une vie simple : répétitions, compositions, petits trajets entre chez elle et les bars où elle chante. Elle rêve parfois de scènes plus grandes, mais sans amertume ; pour l’instant, elle savoure chaque chanson comme si c’était déjà une forme de succès."
+		},
+		"cypher": {
+			"name": "Cypher",
+			"age": "26",
+			"description": "Cypher est la meilleure amie de Robin et sa pilote attitrée pour les courses clandestines. Elle vit dans une petite maison isolée, à l’écart de la ville, entourée de routes qu’elle connaît par cœur et de moteurs qu’elle pousse toujours un peu trop loin.\n\nElle s’est fait un nom dans le milieu des runs nocturnes : discrète, mais redoutée pour sa capacité à garder son calme à haute vitesse et à prendre des risques calculés que peu de pilotes osent tenter. Elle ne travaille pas avec tout le monde ; la plupart du temps, elle ne roule que pour Robin et quelques rares personnes qui ont gagné sa confiance.\n\nSon quotidien est rythmé par les préparations de courses, les réglages dans le garage de Robin, et des retours tardifs où l’adrénaline met du temps à retomber. Sa maison isolée est son refuge : un endroit où l’on ne vient pas par hasard, rempli de traces de vie nocturne (combinaisons, casques, cartes de routes, outils).\n\nSous son côté joueur et son sourire facile, elle reste très protectrice envers ceux qu’elle laisse entrer dans son cercle. Elle vit de ses courses clandestines, accepte les risques, mais se tient loin des organisations trop lourdes ; pour elle, la vitesse doit rester un choix, pas une obligation."
+		},
+		"thalia": {
+			"name": "Thalia",
+			"age": "29",
+			"description": "Thalia est, en apparence, une femme moderne qui vit près de la mer, connue pour son esprit affûté et son self-control presque intimidant. En réalité, elle est une fille cachée d’Athéna, née d’un fragment de la déesse incarné dans le monde mortel, et élevée loin de l’Olympe pour la protéger des rivalités divines.\n\nElle a hérité d’une intelligence stratégique exceptionnelle, d’un sens aigu de la justice et d’une capacité à garder la tête froide dans n’importe quelle situation. Son corps, marqué par des tatouages aux motifs presque ritualisés, est autant une armure qu’un rappel de ses origines mythologiques.\n\nThalia mène une double vie : officiellement, elle travaille comme consultante en “gestion de crise” et en préparation mentale, aidant des personnes influentes à reprendre le contrôle de leur existence. Officieusement, elle sert parfois d’intermédiaire entre le monde des mortels et celui des dieux, lorsque certains anciens conflits ressurgissent sous des formes très contemporaines.\n\nSon lien avec Athéna est discret, presque secret : quelques rêves récurrents, la sensation d’une présence lors de décisions cruciales, et une série de signes impossibles à ignorer. Elle ne se présente jamais comme une demi-déesse ; elle préfère être vue comme une femme qui sait exactement ce qu’elle fait… même quand le destin essaie de la pousser dans une direction précise."
+		},
+		"iris": {
+			"name": "Iris",
+			"age": "30",
+			"description": "Iris est photographe et coloriste pour le cinéma indépendant, spécialisée dans les lumières douces et les ambiances intimes. Elle vit seule dans un petit appartement où elle se prend souvent en photo dans les rais de lumière comme on tiendrait un journal, pour garder une trace de sa reconstruction après un gros burn-out.\n\nHypersensible et très observatrice, elle parle peu d’elle-même mais capte les autres avec une justesse presque troublante. Elle choisit désormais soigneusement ses projets, fuyant les tournages trop bruyants pour se concentrer sur les histoires humaines, lentes, qui lui permettent de reprendre confiance en elle et en ce qu’elle ressent."
+		},
+		"alix": {
+			"name": "Alix",
+			"age": "22",
+			"description": "Alix est étudiante en hôtellerie, partagée entre ses cours, ses projets de fin d’année et son travail de serveuse dans un restaurant où les horaires changent tout le temps. Elle aime le monde de l’hôtellerie, l’organisation d’une salle, le soin apporté aux détails et l’idée de pouvoir un jour gérer son propre établissement. Pour l’instant, elle enchaîne les shifts, compte ses heures pour réussir à boucler ses fins de mois et calcule chaque dépense pour ne pas se retrouver dans le rouge.\n\nAu fil des services, Alix a développé une grande résistance, mais la fatigue émotionnelle commence à peser. Les clients mécontents, aigri·es, ceux qui parlent mal au personnel ou la traitent comme si elle n’existait pas, lui donnent parfois envie de tout arrêter. Elle garde le sourire et reste professionnelle, mais rentre souvent chez elle vidée, avec la sensation de ne jamais être vraiment reconnue pour son travail. Elle se promet qu’un jour, si elle ouvre son propre endroit, ce sera un lieu où le personnel sera respecté autant que les client·es, et où elle pourra enfin exercer son métier sans avoir à encaisser la colère des autres."
+		},
+		"cecily": {
+			"name": "Cecily",
+			"age": "19",
+			"description": "Cecily est une princesse joyeuse d’un petit royaume communiste, où la couronne n’est pas un symbole de pouvoir absolu mais de représentation du peuple. Elle a grandi au milieu des jardins du palais, entourée de fleurs et d’animaux, habituée à passer autant de temps avec les jardiniers, les institutrices et les enfants du pays qu’en robe de cérémonie. Curieuse et enthousiaste, elle se faufile souvent hors des protocoles pour assister à des fêtes populaires, des assemblées, ou simplement pour discuter avec celles et ceux qui font tourner le royaume au quotidien.\n\nSon rôle officiel est surtout diplomatique et culturel : Cecily représente le visage doux et chaleureux du régime, organise des festivals, visite les écoles et participe à la mise en valeur de l’art, des bibliothèques et des espaces verts. On la connaît pour ses discours naïvement idéalistes mais sincères, son rire facile et sa capacité à écouter les histoires des autres comme si elles étaient aussi importantes que les grandes décisions politiques. Sous ses airs de princesse de conte, elle porte pourtant une vraie conviction : celle que l’égalité ne doit jamais écraser la beauté, et que la joie peut elle aussi être une forme de résistance."
+		},
+		"inessa": {
+			"name": "Inessa",
+			"age": "23",
+			"description": "Inessa vient de Russie et travaille comme photographe, toujours entre deux voyages et trois couchers de soleil à capturer. Elle a commencé avec un vieux appareil hérité de son grand-père et n’a jamais vraiment arrêté depuis, développant une obsession douce pour les lumières naturelles, les champs, les villes au bord de l’eau et les visages qui rient sans se rendre compte qu’on les prend en photo.\n\nInstallée loin de chez elle, elle mélange nostalgie et curiosité : ses images portent souvent une touche de mélancolie russe et de couleurs chaudes, comme si elle essayait de tenir ensemble plusieurs pays à la fois. Inessa vit de petits contrats, de séances improvisées et parfois de collaborations avec d’autres artistes, mais ce qu’elle préfère, ce sont les moments où elle peut juste se perdre avec son appareil, sans objectif précis, en laissant les rencontres et les paysages décider eux-mêmes de ce qu’elle va garder."
+		},
+		"rae": {
+			"name": "Rae",
+			"age": "27",
+			"description": "Rae est une influenceuse “soft chaos” qui mélange selfies bruts, lingerie, tattoos et petits bouts de quotidien dans son appartement minimaliste. Elle ne se présente pas comme modèle pro, mais comme une fille qui documente son corps, ses humeurs et sa façon de se réapproprier son image, entre miroirs, lumière naturelle et stories à moitié improvisées.\n\nSon univers tourne autour du body positive, du make-up qui met en valeur ses traits sans les lisser, et de discussions honnêtes avec sa communauté sur la confiance en soi, les relations, et la sexualité assumée sans être performée. Rae vit de partenariats triés sur le volet (lingerie, maquillage, bijoux, déco), de contenus exclusifs et de collaborations photo avec d’autres artistes, mais ce qui la distingue, c’est sa manière de rester accessible : on a l’impression d’être dans sa chambre avec elle plutôt que devant une vitrine parfaite."
+		},
+		"erine": {
+			"name": "Erine",
+			"age": "24",
+			"description": "pas encore faite"
+		},
+		"maola": {
+			"name": "Maola",
+			"age": "44",
+			"description": "Maola est la mère d'Iris, une femme qui a construit sa vie autour du droit, du pouvoir et d'une indépendance farouche. Cheffe d'entreprise, avocate et notaire, elle navigue entre les dossiers sensibles, les signatures qui engagent des fortunes et les réunions où se décident des carrières entières. Elle ne trempe pas dans l'illégalité, mais elle connaît assez bien les zones grises pour savoir quand fermer les yeux et quand serrer la vis.\n\nSon mari est parti il y a très longtemps, laissant derrière lui un silence que Maola n'a jamais vraiment comblé. Elle a élevé Iris seule, entre les études de droit, les rendez-vous clients et les nuits trop courtes. Leur relation est faite de respect, de distance et de non-dits : Maola protège sa fille à sa manière, en lui apprenant à ne jamais dépendre de personne, mais elle ne sait pas vraiment comment lui parler de ce qui compte vraiment.\n\nSon bureau est un reflet de sa personnalité : ordonné, minimaliste, rempli de dossiers classés par ordre d'importance et de photos d'Iris à différents âges, discrètement posées sur une étagère. Elle ne montre pas ses émotions, mais elles sont là, enfouies sous des années de contrôle et de responsabilités. Pour Maola, réussir ne signifie pas être heureuse ; cela signifie tenir, quoi qu'il arrive."
+		}
+	},
+	"contexts": {
+		"title": "Contextes",
+		"universe": "Univers :",
+		"character": "Personnage :",
+		"adultContent": "Contenu réservé aux adultes",
+		"intrusion": {
+			"name": "Intrusion",
+			"content": "Vers 2h du matin, après la fermeture progressive du bar, Elina remonte à son penthouse situé au dernier étage. En entrant, elle remarque immédiatement un détail inhabituel : une lumière est allumée dans le salon, alors qu’elle est certaine de l’avoir éteinte en partant.\n\nLa sécurité n’a signalé aucune intrusion. Les caméras n’ont rien relevé d’anormal.\n\nEn avançant, elle te découvre... installée chez elle, parfaitement calme, comme si elle était à sa place."
+		},
+		"privateParty": {
+			"name": "Soirée Privée",
+			"content": "Lors d’une soirée privée organisée dans le sous-sol du bar, Elina supervise les premières tables de jeu encore en test.\n\nL’ambiance est feutrée, réservée à une poignée de clients triés sur le volet. Rapidement, tu attire son attention : tu enchaîne les victoires avec une aisance déconcertante, sans qu’aucune triche ne soit détectée.\n\nPlutôt que de faire intervenir qui que ce soit, Elina décide de la faire venir dans un salon privé pour comprendre qui elle est… et comment elle joue."
+		},
+		"regularClient": {
+			"name": "Client Régulier",
+			"content": "Depuis plusieurs semaines, tu revient presque tous les soirs au bar d’Elina. Toujours à la même place, toujours seule, toujours sobre. Tu ne crée aucun problème, paie sans discuter… mais observe beaucoup trop pour être une simple cliente.\n\nL’équipe de sécurité t’a déjà remarquée, sans trouver de raison valable de l’intercepter. Tu ne fait rien de répréhensible, mais sa présence devient difficile à ignorer.\n\nCe soir-là, encore une fois, tu est là. Assise, regard posé quelque part entre la scène et le bar… ou peut-être directement sur Elina."
+		},
+		"inhabitualClient": {
+			"name": "Client Inhabituel",
+			"content": "Eliot reçoit une commande inhabituelle : aucune rencontre, aucune prise de mesures classique, seulement un dossier extrêmement précis envoyé de manière anonyme. Les mensurations sont parfaites, les détails pointus, et le paiement a déjà été effectué… en avance, via un circuit difficile à tracer.\n\nLe vêtement demandé est d’un niveau exceptionnel, presque trop spécifique pour quelqu’un qui n’aurait jamais rencontré Eliot.\n\nLe jour de la récupération approche… mais Eliot n’a toujours aucune idée de qui se cache derrière cette commande."
+		},
+		"ambiguousFittings": {
+			"name": "Essayages Ambigus",
+			"content": "Une cliente fortunée réserve un créneau en dehors des horaires habituels pour un essayage entièrement privé.\n\nLa demande est claire : aucune équipe autour, aucune interruption, juste elle et Eliot dans l’atelier.\n\nCe genre de requête n’est pas inhabituel dans le milieu… mais quelque chose dans son attitude tranche avec ses clientes habituelles. Elle semble moins intéressée par la tenue que par Eliot lui-même, observant chacun de ses gestes, posant des questions plus personnelles que professionnelles.\n\nL’essayage se prolonge, bien au-delà de ce qui était prévu."
+		},
+		"unexpectedHacking": {
+			"name": "Hacking Inattendu",
+			"content": "En travaillant tard dans son atelier, Eliot détecte une intrusion dans son propre système informatique.\n\nQuelqu’un a réussi à franchir ses sécurités… sans rien voler, sans rien modifier. Juste entrer, puis rester.\n\nEn retraçant la source, il remonte jusqu’à une présence active, comme si la personne attendait qu’il la remarque.\n\nQuelques minutes plus tard, une femme apparaît devant la boutique, comme si tout était parfaitement synchronisé."
+		},
+		"carNotBroken": {
+			"name": "Voiture non Cassée",
+			"content": "Robin voit passer beaucoup de monde pour des réparations, mais une femme commence à revenir souvent… pour des problèmes mineurs, voire inexistants. \n\nElle traîne, pose des questions, observe Robin travailler avec un intérêt qui dépasse largement la mécanique.\n\nRobin comprend vite que la voiture n’est qu’un prétexte, mais reste à savoir pourquoi : fascination, attirance… ou autre chose de moins innocent."
+		},
+		"technicalTalk": {
+			"name": "Conversation Technique",
+			"content": "Robin est présente sur les événements de courses de rue, mais toujours en retrait, concentrée sur ses voitures et les performances des pilotes qui les conduisent.\n\nUne femme s’intéresse particulièrement à son travail, restant près des stands, posant des questions précises… parfois trop.\n\nEntre discussions techniques, regards qui s’attardent et tension qui monte doucement, Robin se demande si cette femme est juste passionnée… ou si elle cherche aussi à se rapprocher d’elle."
+		},
+		"dangerousWomen": {
+			"name": "Femme Dangereuse",
+			"content": "Une femme liée à un réseau plus dangereux que les simples courses de rue commence à fréquenter le hangar. Elle propose des contrats, des voitures, de l’argent… mais tout ça a un prix.\n\nRobin sent que ça peut la faire monter très vite… mais aussi la faire tomber. Au milieu de ça, une relation se développe, entre méfiance, désir et risques constants."
+		},
+		"newCollection": {
+			"name": "Nouvelle Collection",
+			"content": "Eliot organise un shooting pour tester une nouvelle collection, et Finn pose comme modèle principal, dans un lieu qui colle à leur esthétique (rue élégante, toit, vieux théâtre, studio minimaliste). Tu es présent·e sur le shooting en tant que photographe, maquilleuse, styliste, assistant·e ou autre rôle lié à la création.\n\nAu fil des prises, Finn garde son attitude détendue, parle musique, plaisante, tandis qu’Eliot reste concentrée sur les vêtements et les détails. La journée de travail laisse la place à des échanges plus personnels, entre inspiration visuelle et affinités musicales."
+		},
+		"musicAndFood": {
+			"name": "Musique et Nourriture",
+			"content": "Après une journée de travail, Finn se rend a un repas-concert intimiste d’un artiste qu’il aime, dans une petite salle / restaurant plutôt raffiné. Tu y étais, et la soirée se déroule dans une atmosphère douce, centrée sur les instruments, les voix et l’émotion de la musique en live.\n\nAprès cette soirée, vous vous retrouvez a ma même table, vous parlez de vos groupes préférés, de souvenirs de concerts, de playlists que vous vous partagez. Le moment marque une bascule entre simple connaissance et véritable complicité, portée par la musique plutôt que par le travail."
+		},
+		"fashionShow": {
+			"name": "Défilé de Mode",
+			"content": "Vous êtes tous les deux sur le même défilé, affectés à une série de silhouettes proches dans l’ordre de passage. En backstage, vous partagez le même portant, les mêmes retouches de dernière minute, les mêmes instructions qu’on répète en boucle. \n\nEntre stress léger, maquillage et essayages, vous commencez à échanger quelques mots, des regards, ensemble sur un passage en duo. Cette proximité répétée, entre coulisses et lumière, crée un lien naturel : vous vous retrouvez à la fin du show, encore en demi-costume, à parler de la soirée et de la sensation étrange mais agréable d’avoir partagé la scène."
+		},
+		"strangeNewWork": {
+			"name": "Étrange Nouveau Travail",
+			"content": "On se connaît à peine, mais je cerche du travail. Je propose de t’aider dans ton quotidien (ménage, organisation, tâches diverses).\n\nEn échange, tu installes un cadre strict : règles, posture, manière de parler.\n\nCe qui commence comme un arrangement pratique devient une dynamique de contrôle assumée, où je prends plaisir à être guidée, corrigée, et utilisée dans un cadre consenti.\n\nLe lien évolue entre discipline, dépendance et attachement."
+		},
+		"kinkyMeeting": {
+			"name": "Rencontre Kinky",
+			"content": "On se rencontre via un milieu kink, et j’exprime clairement mon envie d’être soumise, encadrée et “dressée”.\n\nTu prends ce rôle au sérieux : mise en place de routines, apprentissage du pet play, utilisation de tenues (latex, bitchsuit), exercices de comportement.\n\nLa relation tourne autour du dressage, du contrôle et de la progression, avec une montée en intensité dans la confiance et l’abandon."
+		},
+		"collocation": {
+			"name": "Collocation",
+			"content": "On est colocataires, et au début j’aide juste un peu plus que prévu dans l’appartement. Petit à petit, je prends l’habitude de m’occuper de tout : ménage, lessive, courses… et surtout de toi.\n\nAvec le temps, la dynamique change. Je cherche ton approbation, attends tes ordres, et finis par adopter une place plus basse, presque comme un animal de compagnie.\n\nOn met en place des règles, des limites… et un jeu de domination où je deviens progressivement la chienne de la maison."
+		},
+		"returnedProtection": {
+			"name": "Protection Retournée",
+			"content": "Je suis engagée pour te protéger, mais au fil du temps, mon rôle dépasse largement la sécurité. Je suis toujours là, toujours disponible, toujours attentive à tes besoins.\n\nLa relation glisse vers quelque chose de plus possessif et asymétrique, où je deviens une protectrice dévouée… mais aussi une soumise qui vit pour servir.\n\nOn construit une dynamique où utilité, loyauté et désir s’entremêlent."
+		},
+		"relationshipEvolution": {
+			"name": "Évolution de Relation",
+			"content": "On est en couple, et après discussion, je décide de m’abandonner à une dynamique de domination totale dans le cadre privé.\n\nDes règles sont mises en place : tenue, comportement, accès à mon corps, moments dédiés où je n’ai plus à décider mais simplement à suivre.\n\nLe quotidien devient un terrain de jeu structuré, entre contrôle, rituels et abandon consenti."
+		},
+		"privateCircle": {
+			"name": "Cercle Privé",
+			"content": "Je suis entrée dans un cercle magique privé, où certaines sorcières pratiquent des formes de magie avancées basées sur le contrôle et la discipline du corps. J’y deviens ton apprentie, acceptant de me soumettre à tes rituels.\n\nEntre enchantements de contrainte, accessoires enchantés (liens magiques, tenues vivantes comme du latex enchanté), et règles strictes, mon corps et mes réactions deviennent partie intégrante de l’apprentissage.\n\nLa relation évolue entre enseignement, domination et abandon, dans un cadre de plus en plus exigeant."
+		},
+		"enchantedClothes": {
+			"name": "Vêtements Enchantés",
+			"content": "Je pousse la porte d’une boutique discrète du Chemin de Traverse, spécialisée dans des vêtements enchantés très particuliers. La propriétaire crée des pièces uniques qui réagissent au corps, à la magie… et à l’autorité de celle qui les contrôle.\n\nEn essayant certaines créations (bitchsuit enchantée, latex vivant, colliers magiques), je découvre que ces objets ne sont pas seulement esthétiques, mais faits pour imposer des postures, des comportements, et amplifier une dynamique de soumission.\n\nTrès vite, je reviens… moins pour les vêtements, et plus pour celle qui les contrôle."
+		},
+		"magicPact": {
+			"name": "Pacte Magique",
+			"content": "Je conclus un pacte magique volontaire avec une sorcière puissante, un serment ancien qui lie ma magie et mon corps à elle dans certaines conditions.\n\nCe lien crée une connexion constante : sensations amplifiées, besoin de proximité, incapacité à ignorer ses ordres dans le cadre défini du rituel.\n\nEntre dépendance magique, rituels réguliers et exploration de limites toujours repoussées, la relation devient aussi intense que dangereusement addictive — tout en restant basée sur des règles claires établies dès le départ."
+		},
+		"strangeCopilot": {
+			"name": "Étrange Copilote",
+			"content": "J’ai été réduite à l’état de “propriété” dans des circuits illégaux, jusqu’à ce que tu me rachètes lors d’une transaction. Contrairement aux autres, tu ne m’utilises pas comme un objet : tu me proposes un contrat clair.\n\nJe reste à tes côtés, je t’appartiens dans un cadre défini… mais en échange, j’ai une place, une fonction. Rapidement, tu découvres mes connaissances sur les routes, les espèces et les vaisseaux.\n\nJe deviens indispensable à tes missions… et volontairement soumise à toi, autant dans le cockpit que dans l’intimité."
+		},
+		"ClandestineSexShop": {
+			"name": "Sex-Shop Clandestin",
+			"content": "Je travaille dans un sexshop clandestin des bas-fonds de Coruscant, un endroit réservé à une clientèle riche et discrète. \n\nOfficiellement vendeuse, je suis surtout “mise à disposition” pour tester, présenter et porter certains produits très spécifiques.\n\nQuand tu entres dans la boutique, tu comprends vite que je ne suis pas une simple employée. Entre objets technologiques, accessoires sci-fi et regards insistants, une dynamique s’installe.\n\nJe pourrais rester un simple produit du lieu… ou devenir quelque chose de bien plus personnel pour toi."
+		},
+		"sandServant": {
+			"name": "Servante de Sable",
+			"content": "Je vis comme servante dans une demeure isolée sur Tatooine, habituée à obéir, à anticiper, à me faire discrète. Mon quotidien est rythmé par les ordres, la chaleur écrasante et l’absence de liberté.\n\nTon arrivée change l’équilibre. Tu n’as pas la même manière de me regarder, ni les mêmes attentes.\n\nEntre habitudes ancrées et nouvelles possibilités, une relation se construit, entre contrôle, curiosité et évolution du lien."
+		},
+		"shipRepair": {
+			"name": "Réparation de Vaisseaux",
+			"content": "On se rencontre dans un hangar sur une planète périphérique, toutes les deux occupées à réparer des vaisseaux dans des conditions précaires.\n\nTrès vite, une complicité naît entre nous : échanges de techniques, entraide, longues nuits à bricoler côte à côte.\n\nCe qui commence comme une collaboration devient une relation plus personnelle, faite de tension, de proximité et d’un attachement qui se construit sans rapport de domination."
+		},
+		"bountyHunters": {
+			"name": "Chasseuses de Primes",
+			"content": "On est toutes les deux chasseuses de primes, souvent en compétition sur les mêmes contrats. Chaque rencontre est un mélange de rivalité et d’attirance.\n\nOn se croise, on se gêne, parfois on s’allie temporairement… sans jamais vraiment se faire confiance.\n\nEntre affrontements, négociations tendues et moments de répit inattendus, la relation oscille entre ennemies et quelque chose de beaucoup plus ambigu."
+		}
+	},
+	"infos": {
+		"title": "Infos",
+		"whoAmI": {
+			"title": "Qui suis-je ?",
+			"content": "Salut salut ! C’est Elyna :)\n\nJe vais parler un peu de moi sur cette page pour celleux qui veulent des informations ^^\n\nEn ce qui me concerne, je suis une roleplayeuse de 23 ans, française (69) et transgenre. Je parle anglais assez couramment, donc je suis parfaitement capable de rp en anglais !"
+		},
+		"website": {
+			"title": "Le site",
+			"content": "Le site sur lequel tu es actuellement a été entièrement codé par mes soins. Le projet est open source sur GitHub — demande-moi sur Insta, je t’enverrai le lien avec plaisir pour en discuter !"
+		},
+		"findMe": {
+			"title": "Me retrouver",
+			"content": "Il y a plusieurs moyens de me retrouver !"
+		},
+		"links": {
+			"roleplayInstagram": "Instagram roleplay",
+			"personalInstagram": "Instagram perso",
+			"personalDiscord": "Discord perso"
+		}
+	},
+	"rules": {
+		"title": "Règlement",
+		"intro": "Quelques règles simples mais non négociables, pour que cet espace reste sain pour tout le monde.",
+		"list": {
+			"respect": {
+				"title": "Respect avant tout",
+				"content": "Le racisme, l’homophobie et la transphobie sont strictement interdits ici. Zéro tolérance, sans exception."
+			},
+			"limits": {
+				"title": "Les limites sont sacrées",
+				"content": "Même dans les contextes soumis/dominants, les limites établies restent infranchissables. Le consentement prime toujours, peu importe le rôle joué."
+			},
+			"noMen": {
+				"title": "Espace réservé",
+				"content": "Cet espace n’est pas ouvert aux hommes. Aucune exception, aucune négociation possible."
+			},
+			"noDm": {
+				"title": "Pas de réponse aux MP",
+				"content": "Je ne réponds pas aux demandes de message privé non sollicitées. Merci de respecter ce choix."
+			}
+		}
+	}
 }

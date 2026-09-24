@@ -38,7 +38,7 @@ export function isContext(value: unknown): value is Context {
         context.universe.every((item) => typeof item === 'string') &&
         typeof context.nsfw === 'boolean' &&
         Array.isArray(context.character) &&
-        context.character.every((item) => isCharacterName(item)) &&
+        context.character.every((item) => item === 'aucun' || isCharacterName(item)) &&
         (context.characterId === undefined ||
             typeof context.characterId === 'number' ||
             (Array.isArray(context.characterId) &&

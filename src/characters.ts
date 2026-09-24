@@ -12,6 +12,8 @@ export const CHARACTER_NAMES = [
     'cecily',
     'inessa',
     'rae',
+    'erine',
+    'maola',
 ] as const
 
 export type CharacterName = typeof CHARACTER_NAMES[number]
